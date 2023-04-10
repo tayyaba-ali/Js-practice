@@ -282,13 +282,55 @@ const studentInfo = [
 // input take array and value
 //output index no
 
-function findingIndex(arr, value) {
-    for (const index in arr) {
-        if (arr[ index ] === value) {
-            return index
-        }
-    }
-    return "nh mila"
+// function findingIndex(arr, value) {
+//     for (const index in arr) {
+//         if (arr[ index ] === value) {
+//             return index
+//         }
+//     }
+//     return "nh mila"
 
+// }
+// console.log(findingIndex([1,2,3,4,5],5));
+
+
+
+// {
+//     let myName = "Tayyab";
+//     console.log(myName);
+
+// }
+
+// {
+//     let myName="Umra"
+//     console.log(myName);
+// }
+// console.log(myName);
+
+// function myName() {
+//     var roll = "Tayyaba";
+// }
+
+// console.log(roll);
+
+
+//rest paraters
+
+// function Num(num1, num2, ...arr) {
+//     console.log(num1,num2,arr)
+// }
+
+// Num(1,2,3,5,6,7,8,)
+
+
+// a function with infinity paramters require sum
+
+function Sum(...numbers) {
+    let sum = 0;
+    for (const num of numbers) {
+        sum+= num
+    }
+    return sum;
 }
-console.log(findingIndex([1,2,3,4,5],5));
+
+console.log(Sum(1,2,3,4,6));
