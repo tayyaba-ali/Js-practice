@@ -129,13 +129,23 @@
 
 // sum of 10 natural numbers by while loop
 
-let i = 1;
-let sum = 0;
-while (i <= 10) {
-    sum = sum + i;
-    i++;
+// let i = 1;
+// let sum = 0;
+// while (i <= 10) {
+//     sum = sum + i;
+//     i++;
+// }
+
+// console.log(sum)
+
+
+//Objects
+
+const obj = {
+    name: "Tayyaba",
+    rollNo: 123,
+    hobbies:["novels,coding"]
 }
 
-console.log(sum)
-
-
+console.log(obj.hobbies);
+console.log(obj.name);
