@@ -141,11 +141,42 @@
 
 //Objects
 
-const obj = {
-    name: "Tayyaba",
-    rollNo: 123,
-    hobbies:["novels,coding"]
-}
+// const obj = {
+//     "name": "Tayyaba",
+//     'rollNo': 123,
+//     'hobbies': [ "novels,coding" ],
+//     "my hobbies":"hello"
+// }
 
-console.log(obj.hobbies);
-console.log(obj.name);
+
+// const key= "parso"
+
+// console.log(obj.hobbies);
+// console.log(obj.name);
+// console.log(obj[ "rollNo" ]);
+
+// obj[ "person" ] = "hello";
+// console.log(obj);
+// console.log(obj[ "my hobbies" ]);
+
+// obj[key] = "heytayyaba@gmail.com";
+// console.log(obj);
+
+
+//iteration in objects
+
+const studentInfo = {
+    name: "tayyaba",
+    roll: 6789,
+    hobbies:["novels","video games"]
+}
+// for (let key in studentInfo) {
+//     console.log(`${key} : ${studentInfo[key]}`);
+// }
+
+
+console.log(Array.isArray(Object.keys(studentInfo)));
+
+// for (const key of Object.keys(studentInfo)) {
+//     console.log(studentInfo[key]);
+// }
