@@ -165,18 +165,130 @@
 
 //iteration in objects
 
-const studentInfo = {
-    name: "tayyaba",
-    roll: 6789,
-    hobbies:["novels","video games"]
-}
+// const studentInfo = {
+//     name: "tayyaba",
+//     roll: 6789,
+//     hobbies:["novels","video games"]
+// }
 // for (let key in studentInfo) {
 //     console.log(`${key} : ${studentInfo[key]}`);
 // }
 
 
-console.log(Array.isArray(Object.keys(studentInfo)));
+// console.log(Array.isArray(Object.keys(studentInfo)));
 
 // for (const key of Object.keys(studentInfo)) {
 //     console.log(studentInfo[key]);
 // }
+
+
+
+
+
+
+// const key1 = "objkey1";
+// const key2 = "objkey2";
+
+
+// const value1="myvalue1"
+// const value2 = "myvalue2"
+
+
+// const obj = {
+//     [ key1 ]: value1,
+//     [key2]:value2
+    
+// }
+
+// console.log(obj);
+
+
+//spread operator
+
+// let myName = [..."tayyaba"];
+// console.log(myName);
+
+
+// const myObj = {
+//     name: "Tayyaba",
+//     age: 123,
+//     year:2019
+// }
+
+// const { name:myName,year} = myObj;
+// console.log(myName,year);
+
+
+// const structuring = { ...["item1","item2","item3"] };
+// console.log(structuring);
+
+//Array of objects
+
+const studentInfo = [
+    {
+        id: 1,
+        name: "Tayyaba",
+        qualification:"BSSe"
+    },
+    {
+        id: 2,
+        name: "Umra",
+        qualification:"Matric"
+    },
+    {
+        id: 3,
+        name: "Wajeeha",
+        qualification:"Intermediate"
+    }
+]
+
+// for (const student of studentInfo) {
+//     let { name, qualification } = student;
+//     name = "hello";
+//     console.log(name,qualification);
+    
+// }
+ 
+
+// const [ {id},, {qualification} ] = studentInfo;
+// console.log(id,qualification);
+
+
+// function isEven(num) {
+//     // if (num % 2 == 0) {
+//     //     return true
+//     // }
+//     // return false
+//     return num % 2 == 0;
+    
+    
+// }
+// console.log(isEven(18));
+
+// let myName = "taYYaba";
+// myName= myName[0].toUpperCase()+myName.slice(1).toLowerCase()
+// console.log(myName);
+
+
+
+// function string(str) {
+//     return str[0];
+// }
+
+// console.log(string("Tayyaba"));
+// console.log(string("Umra"));
+
+
+// input take array and value
+//output index no
+
+function findingIndex(arr, value) {
+    for (const index in arr) {
+        if (arr[ index ] === value) {
+            return index
+        }
+    }
+    return "nh mila"
+
+}
+console.log(findingIndex([1,2,3,4,5],5));
