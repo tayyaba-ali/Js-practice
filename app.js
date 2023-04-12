@@ -353,16 +353,30 @@
 
 //promise
 
-let promise = new Promise((resolve, reject, (val) => {
-    if (val % 2 == 0) {
-        resolve("apka milaya hua no even  ha")
-        return;
-    }
-    reject('apka milaya hua no odd  ha');
-}))
+// let promise = new Promise((resolve, reject, (val) => {
+//     if (val % 2 == 0) {
+//         resolve("apka milaya hua no even  ha")
+//         return;
+//     }
+//     reject('apka milaya hua no odd  ha');
+// }))
 
-promise.then((data) => {
-    console.log(data);
-}).catch((error) => {
-  console.log(error);  
+// promise.then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//   console.log(error);
+// })
+
+
+//callback
+
+
+function meraKaam(dostKaKamm) {
+
+    console.log("mera kaam hogya")
+    dostKaKamm()
+}
+
+meraKaam(function () {
+    console.log('dost ka kaam')
 })
