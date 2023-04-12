@@ -224,23 +224,23 @@
 
 //Array of objects
 
-const studentInfo = [
-    {
-        id: 1,
-        name: "Tayyaba",
-        qualification:"BSSe"
-    },
-    {
-        id: 2,
-        name: "Umra",
-        qualification:"Matric"
-    },
-    {
-        id: 3,
-        name: "Wajeeha",
-        qualification:"Intermediate"
-    }
-]
+// const studentInfo = [
+//     {
+//         id: 1,
+//         name: "Tayyaba",
+//         qualification:"BSSe"
+//     },
+//     {
+//         id: 2,
+//         name: "Umra",
+//         qualification:"Matric"
+//     },
+//     {
+//         id: 3,
+//         name: "Wajeeha",
+//         qualification:"Intermediate"
+//     }
+// ]
 
 // for (const student of studentInfo) {
 //     let { name, qualification } = student;
@@ -325,12 +325,44 @@ const studentInfo = [
 
 // a function with infinity paramters require sum
 
-function Sum(...numbers) {
-    let sum = 0;
-    for (const num of numbers) {
-        sum+= num
-    }
-    return sum;
-}
+// function Sum(...numbers) {
+//     let sum = 0;
+//     for (const num of numbers) {
+//         sum+= num
+//     }
+//     return sum;
+// }
 
-console.log(Sum(1,2,3,4,6));
+// console.log(Sum(1,2,3,4,6));
+
+
+//Hoisting
+
+
+// console.log(num);
+// hello()
+// console.log(num);
+
+// var num = 5;
+
+// function hello() {
+//     console.log("hello")
+// }
+
+// hello()
+
+//promise
+
+let promise = new Promise((resolve, reject, (val) => {
+    if (val % 2 == 0) {
+        resolve("apka milaya hua no even  ha")
+        return;
+    }
+    reject('apka milaya hua no odd  ha');
+}))
+
+promise.then((data) => {
+    console.log(data);
+}).catch((error) => {
+  console.log(error);  
+})
