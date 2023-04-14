@@ -371,12 +371,101 @@
 //callback
 
 
-function meraKaam(dostKaKamm) {
+// function meraKaam(dostKaKamm) {
 
-    console.log("mera kaam hogya")
-    dostKaKamm()
-}
+//     console.log("mera kaam hogya")
+//     dostKaKamm()
+// }
 
-meraKaam(function () {
-    console.log('dost ka kaam')
-})
+// meraKaam(function () {
+//     console.log('dost ka kaam')
+// })
+
+// const fruits = [ "Apple", "Mango", "Banana" ];
+// console.log(fruits.push('orange'));
+// console.log(fruits.pop('orange'));
+// console.log(fruits.shift());
+// console.log(fruits.unshift("hello"));
+// console.table(fruits)
+
+
+// if (true) {
+//     if (true) {
+//         console.log("Hello world");
+//     }
+// }
+
+
+// A program in which if user gives length of the month greater than 3 then we will show its abbreviation
+
+// let userMonth = prompt("Enter month name");
+// let abbre = (userMonth.length > 3) && userMonth.slice(0, 3);
+// console.log(abbre);
+
+// let text = "hello tayyaba tayyaba";
+// console.log(text);
+// console.log(text.replace(/tayyaba/g,"umra"));
+
+// Important
+// console.log(Math.round(Math.random() * 100+1));  // trick to start from zero to the 10 range
+
+
+// ParseInt will  ignore the decimal points and parseFloat exactly let you to print the decimal digits
+
+
+// Number Methods
+// console.log(parseInt("34.89"));
+// console.log(parseInt("34.890870770"));
+// console.log(parseFloat("34.890870770"));
+// console.log(parseFloat("3.00"));
+// console.log(Number("3.00"));
+// console.log(Number("3.01"));
+// console.log(Number("3.51"));
+// console.log(Number("3.48"));
+// console.log(Math.round(12.90));
+// console.log(Math.ceil(12.20));
+// console.log(Math.ceil(-4.90));
+// console.log(Math.floor(-4.90));
+
+// BOolean Case
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number("hello"));
+
+// Number to string
+
+// console.log(typeof String(34));
+
+// let num = 100;
+// let num2 = 102+"";
+// console.log(typeof num2);
+// console.log(typeof num.toString());
+
+// let add = 2 + "2";
+// let sub = 2 - "2";
+// console.log(add);
+// console.log(sub);
+
+// console.log(typeof (99.45).toFixed(2), (99.45).toFixed(2)); // important not only fixed the length of decimals but also converts the number in the string
+
+// console.log(89.55.toFixed());  // if we don't pass any value to the toFixed() it will only round off
+// console.log(93.1.toFixed(10));
+
+
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+// console.log(Boolean("Tayyaba"));
+// console.log(Boolean(""));
+// console.log(Boolean("90"));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+
+//Data Constructor
+
+let now = new Date(2000,4,12,12,60,60,1200); // custom date can be build
+console.dir(now);
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getFullYear());
+// console.log(now.getMinutes());
