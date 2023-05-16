@@ -474,3 +474,10 @@
 console.log("Hello World");
 var name = "Tayyaba";
 console.log(name);
+
+var number = 90;
+console.log(number + 10);
+
+var decrement = 55++;
+console.log(decrement);
+console.log("Hello everyone how all are you?");
