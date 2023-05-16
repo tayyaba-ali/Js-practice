@@ -463,9 +463,14 @@
 
 //Data Constructor
 
-let now = new Date(2000,4,12,12,60,60,1200); // custom date can be build
-console.dir(now);
+// let now = new Date(2000,4,12,12,60,60,1200); // custom date can be build
+// console.dir(now);
 // console.log(now.getDate());
 // console.log(now.getDay());
 // console.log(now.getFullYear());
 // console.log(now.getMinutes());
+
+
+console.log("Hello World");
+var name = "Tayyaba";
+console.log(name);
