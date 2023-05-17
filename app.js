@@ -481,3 +481,11 @@ console.log(number + 10);
 var decrement = 55++;
 console.log(decrement);
 console.log("Hello everyone how all are you?");
+
+
+console.log("I am practicing what i have learnt");
+
+if (decrement === 6) {
+    console.log("Hello you have gussed the right option");
+}
+
