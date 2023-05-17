@@ -489,3 +489,4 @@ if (decrement === 6) {
     console.log("Hello you have gussed the right option");
 }
 
+console.log("hi");
