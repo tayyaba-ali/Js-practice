@@ -471,22 +471,43 @@
 // console.log(now.getMinutes());
 
 
-console.log("Hello World");
-var name = "Tayyaba";
-console.log(name);
+// console.log("Hello World");
+// var name = "Tayyaba";
+// console.log(name);
 
-var number = 90;
-console.log(number + 10);
+// var number = 90;
+// console.log(number + 10);
 
-var decrement = 55++;
-console.log(decrement);
-console.log("Hello everyone how all are you?");
+// var decrement = 55++;
+// console.log(decrement);
+// console.log("Hello everyone how all are you?");
 
 
-console.log("I am practicing what i have learnt");
+// console.log("I am practicing what i have learnt");
 
-if (decrement === 6) {
-    console.log("Hello you have gussed the right option");
+// if (decrement === 6) {
+//     console.log("Hello you have gussed the right option");
+// }
+
+// console.log("hi");
+
+
+let firstNumber = parseInt(prompt('Enter the first number:'));
+console.log(firstNumber);
+let secondNumber = parseInt(prompt('Enter the second number:'));
+let operation = prompt('Enter the operation (+, -, *, /, %):');
+let result;
+if (operation === '+') {
+	result = firstNumber + secondNumber;
+} else if (operation === '-') {
+	result = firstNumber - secondNumber;
+} else if (operation === '*') {
+	result = firstNumber * secondNumber;
+} else if (operation === '/') {
+	result = firstNumber / secondNumber;
+} else if (operation === '%') {
+	result = firstNumber % secondNumber;
+} else {
+	('Invalid operation');
 }
-
-console.log("hi");
+console.log(result);
