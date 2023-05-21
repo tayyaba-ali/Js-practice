@@ -492,22 +492,44 @@
 // console.log("hi");
 
 
-let firstNumber = parseInt(prompt('Enter the first number:'));
-console.log(firstNumber);
-let secondNumber = parseInt(prompt('Enter the second number:'));
-let operation = prompt('Enter the operation (+, -, *, /, %):');
-let result;
-if (operation === '+') {
-	result = firstNumber + secondNumber;
-} else if (operation === '-') {
-	result = firstNumber - secondNumber;
-} else if (operation === '*') {
-	result = firstNumber * secondNumber;
-} else if (operation === '/') {
-	result = firstNumber / secondNumber;
-} else if (operation === '%') {
-	result = firstNumber % secondNumber;
-} else {
-	('Invalid operation');
+// let firstNumber = parseInt(prompt('Enter the first number:'));
+// console.log(firstNumber);
+// let secondNumber = parseInt(prompt('Enter the second number:'));
+// let operation = prompt('Enter the operation (+, -, *, /, %):');
+// let result;
+// if (operation === '+') {
+// 	result = firstNumber + secondNumber;
+// } else if (operation === '-') {
+// 	result = firstNumber - secondNumber;
+// } else if (operation === '*') {
+// 	result = firstNumber * secondNumber;
+// } else if (operation === '/') {
+// 	result = firstNumber / secondNumber;
+// } else if (operation === '%') {
+// 	result = firstNumber % secondNumber;
+// } else {
+// 	('Invalid operation');
+// }
+// console.log(result);
+
+
+// let x = 10;
+// if (true) {
+// 	let x=20
+// }
+// console.log(x);
+
+
+// let x = 5;
+// function foo() {
+// 	x = 10;
+// 	console.log(x);
+// }
+// foo()
+// console.log(x);
+
+
+function myName() {
+	let myName = "Tayyaba";
 }
-console.log(result);
+console.log(myName);
