@@ -97,11 +97,59 @@
 
 //  BigInt
 
-var myNumber = BigInt(12387306306304630);
-var secondNumber = 52852851485214n;
-var normalNumber = 437437;
-console.log(typeof myNumber,myNumber);
-console.log(typeof secondNumber, secondNumber);
+// var myNumber = BigInt(12387306306304630);
+// var secondNumber = 52852851485214n;
+// var normalNumber = 437437;
+// console.log(typeof myNumber,myNumber);
+// console.log(typeof secondNumber, secondNumber);
 
-console.log(myNumber+secondNumber);
-console.log(myNumber+normalNumber);
+// console.log(myNumber+secondNumber);
+// console.log(myNumber+normalNumber);
+
+// == vs ===
+
+// console.log(8>7);
+// console.log(8<7);
+// console.log(8=="8");
+// console.log(8==="8");
+// console.log(8!==9);
+// console.log(18%3);
+// console.log(18%5);
+// console.log(7 != "7");
+// console.log("7" !== "7");
+
+//  truthy and falsy values
+
+// falsy
+
+// 0 "" null undefined false
+
+
+
+//  ternery operator
+
+let age = 14;
+
+let drink = age >= 18 ? "coffee":age < 15 ? "choc" : "milk"
+console.log(drink);
+
+
+
+
+
+
+
+
+// if else condition
+
+let num = 22;
+// if (num % 2 === 0) {
+// 	console.log("number is even");
+
+// }
+// else {
+// 	console.log("number is odd");
+	
+// }
+
+// console.log("number is odd");
