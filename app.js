@@ -78,9 +78,30 @@
 
 // template literals
 
-let fsName = "Tayyaba";
-let lsName = "Ali";
+// let fsName = "Tayyaba";
+// let lsName = "Ali";
 
-let fullName = `My name is ${fsName} and my father name is ${lsName}`
+// let fullName = `My name is ${fsName} and my father name is ${lsName}`
 
-console.log(fullName);
+// console.log(fullName);
+
+
+// let uniqueNumber;
+
+// console.log(typeof uniqueNumber,uniqueNumber);
+
+
+// let value = null;
+
+// console.log(value,typeof value);
+
+//  BigInt
+
+var myNumber = BigInt(12387306306304630);
+var secondNumber = 52852851485214n;
+var normalNumber = 437437;
+console.log(typeof myNumber,myNumber);
+console.log(typeof secondNumber, secondNumber);
+
+console.log(myNumber+secondNumber);
+console.log(myNumber+normalNumber);
