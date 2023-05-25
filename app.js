@@ -165,16 +165,12 @@
 // }
 // console.log(num);
 
-
-
 // let num = 0;
 
 // while (num <= 4) {
 // 	console.log(num);
 // 	num++;
 // }
-
-
 
 // sum of first 10 natural numbers
 
@@ -187,7 +183,6 @@
 // 	num++;
 // }
 // console.log(total);
-
 
 // let num = 1;
 // let total = 0;
@@ -214,7 +209,6 @@
 // 	console.log(i);
 // }
 
-
 // console.log(i);
 
 // let total = 0;
@@ -224,17 +218,132 @@
 // }
 // console.log(total);
 
-
-
 // 0+1 == 0
-
 
 // break
 
-for (var i = 0; i <= 10; i++){
-	console.log(i);
-	if (i === 5) {
-		break;
-	}
-}
-console.log(i);
+// for (var i = 0; i <= 10; i++){
+// 	if (i === 5) {
+// 		continue;
+// 	}
+// 	console.log(i);
+// }
+// console.log(i);
+// Write a while loop that prints even numbers from 2 to 20.
+
+// let num = 2;
+// while (num <= 20) {
+// 	if (num % 2 === 0) {
+// 		console.log(num);
+// 	}
+// 	num++;
+// }
+
+// Write a do-while loop that calculates the sum of squares of numbers from 1 to 5.
+
+// let num = 1;
+// let sum = 0;
+// do {
+// 	sum += num * num;
+// 	num++;
+// } while (num <= 5);
+
+// console.log(sum);
+
+// Reverse a string
+
+// const str = 'Hello World!';
+
+// let reversedStr="";
+
+// for (let i = str.length-1; i >= 0; i--) {
+// 	reversedStr += str[i];
+// }
+// console.log(reversedStr);
+
+// let str = "My name is Tayyaba";
+
+// let reversedStr = "";
+
+// for (var i = str.length - 1; i >= 0; i--){
+// 	reversedStr += str[i]
+// }
+
+// console.log(reversedStr);
+
+// Write a while loop that prompts the user to enter a password until they enter the correct password ("password123").
+
+// let password ;
+// while (password !== "password123") {
+// 	password=prompt("Enter password again")
+// }
+
+// console.log("your password is true");
+
+// Write a do-while loop that calculates the factorial of a given number.
+
+// let num = 5;
+// let factorial=1;
+
+// do {
+// 	factorial *= num;
+// 	num--
+// }
+// while (num >= 1)
+
+// console.log(factorial);
+
+// const fruits = [ "apple", "mango", "banana" ];
+
+// console.log(fruits[2], fruits[1]);
+// console.table(fruits);
+// modifying array
+
+// fruits[ 1 ] = "Tayyaba";
+// console.log(fruits);
+
+// const hello = {
+// 	name :"Tayyaba"
+// }
+
+// console.log(typeof fruits);
+// console.log(Array.isArray(fruits));
+// console.log(Array.isArray(hello));
+
+// Exercise 3: Modifying Array Elements
+// a) Create an array called colors with the following initial elements: "red", "green", "blue", "yellow", "orange".
+// b) Replace the element at index 2 with the value "purple" using the splice method.
+
+// const colors = [ "red", "green", "blue", "yellow", "orange" ];
+
+// colors.splice(2,1,"purple")
+// console.log(colors);
+
+// concatenation of two arrays
+
+// let array1 = ['apple', 'mango', 'banana', 'grapes'];
+// let arrys2 = ['js', 'html', 'css'];
+
+// let mergedArray = array1.concat(arrys2);
+// console.log(mergedArray);
+
+//  how to clone an array
+
+// let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let array2 = [...array1];
+// let array2 = [ 1, 2, 3, 4, 5 ];
+
+// let array2 = array1.slice(0);
+// let array2 = [].concat(array1);
+// spread operator
+
+// let array2 = [ ...array1 ];
+
+// let array2 = array1.slice(0).concat(['tayyaba', 'umra',...array1]);
+
+// array1.push("5");
+// console.log('array 1 is', array1);
+// console.table('array 2 is', array2);
+
+// console.log(array1 === array2);
