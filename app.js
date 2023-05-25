@@ -85,11 +85,9 @@
 
 // console.log(fullName);
 
-
 // let uniqueNumber;
 
 // console.log(typeof uniqueNumber,uniqueNumber);
-
 
 // let value = null;
 
@@ -124,32 +122,119 @@
 
 // 0 "" null undefined false
 
-
-
 //  ternery operator
 
-let age = 14;
+// let age = 14;
 
-let drink = age >= 18 ? "coffee":age < 15 ? "choc" : "milk"
-console.log(drink);
-
-
-
-
-
-
-
+// let drink = age >= 18 ? "coffee":age < 15 ? "choc" : "milk"
+// console.log(drink);
 
 // if else condition
 
-let num = 22;
+// let num = 22;
 // if (num % 2 === 0) {
 // 	console.log("number is even");
 
 // }
 // else {
 // 	console.log("number is odd");
-	
+
 // }
 
 // console.log("number is odd");
+
+// let day = 7;
+
+// switch (day) {
+// 	case 7:
+// 		console.log('Today is Monday');
+// 		break;
+// 	case 'Tuesday':
+// 		console.log('Today is Tuesday');
+// 		break;
+// 	default:
+// 		console.log('Today is Friday');
+// }
+
+// while loop
+
+// let num = 0;
+// while (num < 10) {
+// 	console.log(num);
+// 	num++;
+// }
+// console.log(num);
+
+
+
+// let num = 0;
+
+// while (num <= 4) {
+// 	console.log(num);
+// 	num++;
+// }
+
+
+
+// sum of first 10 natural numbers
+
+// let num = 1;
+
+// let total = 0;
+
+// while (num <= 10) {
+// 	total += num+total;
+// 	num++;
+// }
+// console.log(total);
+
+
+// let num = 1;
+// let total = 0;
+// while (num <= 10) {
+// 	total = total + num;
+// 	num++
+// }
+// console.log(total);
+
+// 1 = 0 + 1;
+// 3 = 1 + 2;
+// 6 = 3 + 3;
+// 10 = 6 + 4;
+// 15 = 10 + 5;
+// 21 = 15 + 6;
+// 28 = 21 + 7;
+// 36 = 28 + 8;
+// 45 = 36 + 9;
+// 55 = 45 + 10;
+// console.log(total);
+
+// var i = 0;
+// for (; i <= 10; i++){
+// 	console.log(i);
+// }
+
+
+// console.log(i);
+
+// let total = 0;
+
+// for (let i = 0; i <= 10; i++){
+// 	total = total + i;
+// }
+// console.log(total);
+
+
+
+// 0+1 == 0
+
+
+// break
+
+for (var i = 0; i <= 10; i++){
+	console.log(i);
+	if (i === 5) {
+		break;
+	}
+}
+console.log(i);
