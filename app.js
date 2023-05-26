@@ -347,3 +347,97 @@
 // console.table('array 2 is', array2);
 
 // console.log(array1 === array2);
+
+// Create two arrays:
+// a) fruits1 with the initial elements: "apple", "banana", "cherry"
+// b) fruits2 with the initial elements: "orange", "kiwi", "mango"
+// Concatenate the two arrays using the slice() method and store the result in a new variable called concatenatedArray1. Make sure the original arrays (fruits1 and fruits2) are not modified.
+
+// Print the concatenatedArray1 to the console.
+
+// const fruits1 = ['apple', 'banana', 'cherry'];
+// const fruits2 = ['orange', 'kiwi'];
+
+// const concatenatedArray1 = [...fruits1.slice(0), ...fruits2.slice(0)];
+// console.log(concatenatedArray1);
+
+// const concatenatedArray2 = fruits1.concat(fruits2);
+// console.log(concatenatedArray2);
+
+// const concatenatedArray3 = [...fruits1, ...fruits2];
+// console.log(concatenatedArray3);
+
+// Exercise 1: Printing Array Elements
+// a) Create an array called numbers with the following elements: 1, 2, 3, 4, 5.
+// b) Use a for loop to iterate over the numbers array and print each element to the console.
+
+// Exercise 2: Summing Array Elements
+// a) Create an array called scores with the following elements: 75, 80, 90, 85, 95.
+// b) Use a for loop to iterate over the scores array and calculate the sum of all the elements.
+// c) Print the sum to the conso
+
+
+// const numbers = [ 1, 2, 3, 4, 5 ];
+
+// for (var i = 0; i < numbers.length; i++){
+// 	console.log(numbers[i]);
+// }
+
+// const scores = [ 75, 80, 90, 85, 95 ];
+
+// let sum = 0;
+
+// for (var i = 0; i < scores.length; i++){
+// 	sum += scores[i]
+// }
+// console.log(sum);
+
+// const numbers = [ 2, 5, 8, 11, 14, 17 ];
+
+// let count = 0;
+
+// for (var i = 0; i < numbers.length; i++){
+// 	if (numbers[ i ] % 2 === 0) {
+// 		count++
+// 	}
+// }
+// console.log(count);
+
+// const numbers = [ 10, 7, 15, 22, 9, 13 ];
+
+// let maxValue = numbers[ 0 ];
+// for (var i = 0; i < numbers.length; i++){
+// 	if (numbers[ i ] > maxValue) {
+// 		maxValue=numbers[i]
+// 	}
+// }
+// console.log(maxValue);
+
+// const numbers = [3, 8, 5, 12, 7, 10];
+// let oddNumbers = [];
+// for (var i = 0; i < numbers.length; i++){
+// 	if (numbers[ i ] % 2 !== 0) {
+// 		oddNumbers.push(numbers[i])
+// 	}
+// }
+// console.log(oddNumbers);
+
+
+// let userPass = prompt("Enteryour password!")
+// while (userPass !== "Tayyaba12") {
+// 	userPass = prompt('Enteryour password!');
+// }
+// console.log(userPass);
+
+
+// for of
+
+let fruits = [ "apple", "mango", "bannaa" ];
+let uppercaseArray = [];
+
+// for (let fruit of fruits) {
+// 	uppercaseArray.push(fruit.toUpperCase())
+// 	// console.log(fruit);
+// }
+
+// console.log(uppercaseArray);
