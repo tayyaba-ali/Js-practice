@@ -376,7 +376,6 @@
 // b) Use a for loop to iterate over the scores array and calculate the sum of all the elements.
 // c) Print the sum to the conso
 
-
 // const numbers = [ 1, 2, 3, 4, 5 ];
 
 // for (var i = 0; i < numbers.length; i++){
@@ -422,22 +421,145 @@
 // }
 // console.log(oddNumbers);
 
-
 // let userPass = prompt("Enteryour password!")
 // while (userPass !== "Tayyaba12") {
 // 	userPass = prompt('Enteryour password!');
 // }
 // console.log(userPass);
 
-
 // for of
 
-let fruits = [ "apple", "mango", "bannaa" ];
-let uppercaseArray = [];
+// let fruits = [ "apple", "mango", "bannaa","grapes" ];
+// let uppercaseArray = [];
 
-// for (let fruit of fruits) {
-// 	uppercaseArray.push(fruit.toUpperCase())
-// 	// console.log(fruit);
+// // for (let fruit of fruits) {
+// // 	uppercaseArray.push(fruit.toUpperCase())
+// // 	// console.log(fruit);
+// // }
+
+// // console.log(uppercaseArray);
+
+// for (let index in fruits) {
+// 	uppercaseArray.push(  fruits[index].toUpperCase());
+// }
+// console.log(uppercaseArray);
+
+// const myArray = [ 1, 2, 3, 4, 5, 6 ];
+
+// let [ num1, num2,,num4,...num5 ] = myArray;
+// console.log(num1, num2, num4, num5);
+
+// num5.push(9);
+// console.log(num5);
+
+// objects
+
+const key = 'phone no';
+
+const obj = {
+	'my name': 'tayyaba',
+	rollNo: 123,
+	course: 'web development',
+	hobbies: ['gaming', 'reading'],
+	anotherObj: {
+		name: 'Micheal',
+		roll: 1245,
+	},
+};
+// iteration in objects
+
+// for (let key in obj) {
+// 	console.log(obj[key]);
 // }
 
-// console.log(uppercaseArray);
+// console.log(Object.keys(obj));
+
+// let objCreate = Object.keys(obj);
+
+// for (let i = 0; i < objCreate.length; i++){
+// 	console.log(obj[i]);
+// }
+
+// for (let key of Object.keys(obj)) {
+// 	console.log(obj[key]);
+// }
+
+// obj[key]="tayyaba@gamil.com"
+
+// console.log(obj["my name"]);
+// console.log(obj["rollNo"]);
+// console.log(obj.course);
+// console.log(obj.hobbies);
+// console.log(obj.anotherObj.name);
+// console.log(obj.anotherObj.roll);
+
+// obj.gender = "female";
+// obj[ "mine" ] = true;
+// console.log(obj);
+
+// computed properties
+
+// const key1 = 'keymy1';
+// const key2 = 'keymy2';
+
+// const value1 = 'value1';
+// const value2 = 'value2';
+
+// const myObj = {
+// 	[key1]: value1,
+// 	[key2]: value2,
+// };
+// console.log(myObj);
+
+// const car = {
+// 	make: "hello",
+// 	model: 2021,
+// 	year: 2023,
+// 	color:"black"
+// }
+
+// for (let key in car) {
+// 	console.log(car[key]);
+// }
+
+// console.log({...["Tayyaba","Umra"]});
+
+// object destructuring
+
+// const student = {
+// 	name: "Tayyaba",
+// 	rollNo: 123,
+// 	course: "Web dev",
+// 	gender: "female",
+// 	batch:2
+// }
+
+// let { name:studentName, course,...restProps } = student;
+
+// console.log(studentName, course, restProps.batch);
+
+
+// Array of objects
+
+const users = [
+	{
+		name: "Tayyaba",
+		rollNo:123
+	},
+	{
+		name: "Umra",
+		rollNo:345
+	}
+	, {
+		name: "Wajeeha",
+		rollNo:990
+	}
+]
+
+const [ {name}, , {rollNo} ] = users;
+console.log(name,rollNo);
+
+// console.table(users)
+// for (let user of users) {
+// 	console.log(user.name,user.rollNo);
+// }
