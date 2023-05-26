@@ -541,25 +541,91 @@ const obj = {
 
 // Array of objects
 
-const users = [
-	{
-		name: "Tayyaba",
-		rollNo:123
-	},
-	{
-		name: "Umra",
-		rollNo:345
-	}
-	, {
-		name: "Wajeeha",
-		rollNo:990
-	}
-]
+// const users = [
+// 	{
+// 		name: "Tayyaba",
+// 		rollNo:123
+// 	},
+// 	{
+// 		name: "Umra",
+// 		rollNo:345
+// 	}
+// 	, {
+// 		name: "Wajeeha",
+// 		rollNo:990
+// 	}
+// ]
 
-const [ {name}, , {rollNo} ] = users;
-console.log(name,rollNo);
+// const [ {name}, , {rollNo} ] = users;
+// console.log(name,rollNo);
 
 // console.table(users)
 // for (let user of users) {
 // 	console.log(user.name,user.rollNo);
 // }
+
+// const books = [
+// 	{ title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
+// 	{ title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+// 	{ title: '1984', author: 'George Orwell', year: 1949 },
+// ];
+
+// let [ { title: booTitle, author: bookuthor } ] = books;
+
+// console.log(booTitle, bookuthor);
+
+
+// const students = [
+// 	{ name: 'Alice', age: 18, grades: [85, 90, 92] },
+// 	{ name: 'Bob', age: 19, grades: [72, 68, 75] },
+// 	{ name: 'Charlie', age: 20, grades: [88, 90, 92] },
+// ];
+
+// let [ ,, { name: studentName, grades: [,secondGrade] } ] = students
+
+// console.log(studentName, secondGrade);
+
+// const employees = [
+// 	{ name: 'John', position: 'Manager', salary: 5000 },
+// 	{ name: 'Alice', position: 'Developer', salary: 4000 },
+// 	{ name: 'Bob', position: 'Designer', salary: 3500 },
+// ];
+
+// let [ , { name: employeeName, position: employeePosition } ] = employees;
+// console.log(employeeName, employeePosition);
+
+
+// const menu = [
+// 	{ name: 'Burger', price: 10, ingredients: ['beef', 'lettuce', 'cheese'] },
+// 	{ name: 'Pizza', price: 12, ingredients: ['tomato', 'cheese', 'pepperoni'] },
+// 	{ name: 'Salad', price: 8, ingredients: ['lettuce', 'tomato', 'cucumber'] },
+// ];
+
+// // let [ , , { name: itemName, ingredients: [ , secondIngredient ], price: itemPrice } ] = menu;
+
+// // console.log(itemName, secondIngredient, itemPrice);
+
+// const cart = [
+// 	{ product: 'Laptop', price: 1000, quantity: 2 },
+// 	{ product: 'Phone', price: 800, quantity: 1 },
+// 	{ product: 'Headphones', price: 100, quantity: 3 },
+// ];
+
+// let [ , { product, price: itemPrice, quantity: itemQuantity } ] = cart;
+
+// console.log(product,itemPrice,itemQuantity);
+
+// console.log("hello world");
+
+// function singHappyBirthday() {
+// 	console.log("Happy Birthday");
+// }
+
+// singHappyBirthday()
+
+
+function sum(a, b,c) {
+	return a+b+c
+}
+
+console.log(sum(9,8,10));
