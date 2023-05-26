@@ -538,7 +538,6 @@ const obj = {
 
 // console.log(studentName, course, restProps.batch);
 
-
 // Array of objects
 
 // const users = [
@@ -574,7 +573,6 @@ const obj = {
 
 // console.log(booTitle, bookuthor);
 
-
 // const students = [
 // 	{ name: 'Alice', age: 18, grades: [85, 90, 92] },
 // 	{ name: 'Bob', age: 19, grades: [72, 68, 75] },
@@ -593,7 +591,6 @@ const obj = {
 
 // let [ , { name: employeeName, position: employeePosition } ] = employees;
 // console.log(employeeName, employeePosition);
-
 
 // const menu = [
 // 	{ name: 'Burger', price: 10, ingredients: ['beef', 'lettuce', 'cheese'] },
@@ -623,9 +620,116 @@ const obj = {
 
 // singHappyBirthday()
 
+// function sum(a, b,c) {
+// 	return a+b+c
+// }
 
-function sum(a, b,c) {
-	return a+b+c
+// console.log(sum(9,8,10));
+
+// let userNum = +prompt("Enter number of which you want  factorial");
+
+// let result = 1;
+
+// for (let i = userNum; i >=1;i-- ){
+// 	result *= i
+// }
+// console.log(result);
+
+// function isEven(num) {
+// 	return num%2===0
+// }
+
+// function isOdd(num) {
+// 	return num%2!== 0
+// }
+
+// console.log(isEven(23));
+// console.log(isEven(22));
+// console.log(isEven(21));
+// console.log(isEven(2));
+// console.log(isOdd(34));
+// console.log(isOdd(33));
+
+// function firstChar(string) {
+// 	return string[0]
+// }
+
+// console.log(firstChar("Tayyaba"));
+// console.log(firstChar("Umra"));
+
+// function findingNum(arr, target) {
+// 	let flag = false;
+// 	for (var index in arr) {
+// 		if (arr[index] === target) {
+// 			flag = true;
+// 		}
+// 	}
+// 	if (flag) {
+// 		return 'We have found your targeted number at '+index;
+// 	}
+// 	return "didn't find";
+// }
+
+// function findingNum(arr, target) {
+// 	for (var i = 0; i < arr.length; i++){
+// 		if (arr[ i ] === target) {
+// 			return `Your target num is at index ${i}`
+// 		}
+// 	}
+// 	return -1
+// }
+
+
+// console.log(findingNum([1, 2, 3, 5], 5));
+
+
+//  function expression
+
+// const sumTwoNumbers = function (a,b) {
+// 	return a+b
+// }
+
+// console.log(sumTwoNumbers(4,5));
+// console.log(sumTwoNumbers(5,5));
+
+
+// arrow functions
+
+// const sumTwoNumbers = (a, b) => a + b;
+// console.log(sumTwoNumbers(2, 6));
+// console.log(sumTwoNumbers(2, 9));
+
+// const singHappyBirthday = name => `Happy Birthday ${name}`;
+
+// console.log(singHappyBirthday("tayyaba"));
+
+
+// const isEven = num => num % 2 === 0;
+// console.log(isEven(9));
+// console.log(isEven(8));
+
+
+// function odd (a, b) {
+// 	return a+b
+// }
+
+// const multiply = function (a, b) {
+// 	return a*b
+// }
+
+// const mutltiply = (a, b) => a * b
+
+
+
+// functions inside functions
+
+const app = () => {
+
+	const myFunc = () => {
+		console.log("I m function inside function");
+	}
+	console.log("inside app");
+	myFunc()
 }
 
-console.log(sum(9,8,10));
+app()
