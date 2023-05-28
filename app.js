@@ -1122,13 +1122,11 @@ const obj = {
 
 // numbers.forEach((num) => {
 // 	if (num % 2 === 0) {
-		
+
 // 		sum +=num
 // 	}
 // });
 // console.log(sum);
-
-
 
 // strings.forEach(str => {
 // 	console.log(str.length);
@@ -1145,8 +1143,6 @@ const obj = {
 // 	}
 // })
 // console.log(largestNum);
-
-
 
 // let strings = [ "Hellao", "Heaai", "Straing" ];
 // let found = false;
@@ -1177,7 +1173,6 @@ const obj = {
 // 	return string
 // }
 
-
 // let result = takingNames(names);
 // console.log(result);
 
@@ -1195,17 +1190,97 @@ const obj = {
 // let result = takingNumbers(numbers);
 // console.log(result);
 
-let names = [ 'Tayyaba', 'Umrajldld', 'Maryam',"Dua" ];
-function takingNames(names) {
+// let names = [ 'Tayyaba', 'Umrajldld', 'Maryam',"Dua" ];
+// function takingNames(names) {
 
-	let updatedArray = [];
-	names.forEach(name => {
-		if (name.length > 5) {
-			updatedArray.push(name)
-		}
+// 	let updatedArray = [];
+// 	names.forEach(name => {
+// 		if (name.length > 5) {
+// 			updatedArray.push(name)
+// 		}
 
-	});
-	return updatedArray;
-}
-let result = takingNames(names);
-console.log(result);
+// 	});
+// 	return updatedArray;
+// }
+// let result = takingNames(names);
+// console.log(result);
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// const square = num => console.log(num*num);;
+
+// let result = numbers.map(square);
+// console.log(result);
+
+// const users = [
+// 	{
+// 		firstName: 'Tayyaba',
+// 		rollNo: 12,
+// 	},
+// 	{
+// 		firstName: 'Umra',
+// 		rollNo: 678,
+// 	},
+// 	{
+// 		firstName: "Wajeeha",
+// 		rollNo:90
+// 	},
+// ];
+
+// console.log(users.map(({ firstName }) => firstName));
+
+// const names = [ "Tayyaba", 'umra', "saad" ];
+
+// console.log(names.map(name=>name.toUpperCase()));
+
+// const students = [
+// 	{
+// 		name: 'Tayyaba',
+// 		age: 21,
+// 	},
+// 	{
+// 		name: 'Umra',
+// 		age: 67,
+// 	},
+// 	{
+// 		name: 'Bisma',
+// 		age: 18,
+// 	},
+// ];
+
+
+// console.log(students.map(student => {
+	
+// 	for (var i = student.length - 1; i >= 0; i--){
+// 		return student[i]
+// 	}
+
+// }));
+
+
+// const strings = [ 'hello', "hi", "bye" ];
+
+// console.log(strings.map(string => {
+// 	return (string.split("").reverse().join(""));
+// }));
+
+// const books = [
+// 	{
+// 		title: "Js",
+// 		author:"Tayyaba"
+// 	}
+// 	, {
+// 		title: "Python",
+// 		author:"Sara"
+// 	}
+// ]
+
+// console.log(books.map(book => {
+// 	return {
+// 		...book,
+// 		formattedTitle:`${book.title} and ${book.author}`
+// 	}
+// }));
+
+const numbers = [ 1, 2, 33, 45, 67 ];
+console.log(numbers.map(num=>String(num)));
