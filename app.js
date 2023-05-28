@@ -1070,11 +1070,42 @@ const obj = {
 // console.log(result(4));
 
 
+
+// let numbers = [ 1, 2, 3, 4 ];
+
+// function myFunc(num,index) {
+// 	console.log(`No is ${num} and index is ${index} and mul by 2 is ${num*2}`);
+// }
+// // for (var i = 0; i < numbers.length; i++){
+// // 	myFunc(numbers[i],i)
+// // }
+// let result=[]
+
+// numbers.forEach(function (number, index) {
+// 	result.push(number)
+// })
+// console.log(result);
+
+
+// let names = [ "Tayyaba", "Umra", "Wajeeha" ];
+
+// function printName(name) {
+// 	console.log(name);
+// }
+// names.forEach(printName)
+
+
 let numbers = [ 1, 2, 3, 4 ];
 
-function myFunc(num,index) {
-	console.log(`No is ${num} and index is ${index} and mul by 2 is ${num*2}`);
+
+function multiply(numbers) {
+	let updatedArray = [];
+
+	numbers.forEach(num => {
+		updatedArray.push(num*2)
+	});
+	return updatedArray
+	
 }
-for (var i = 0; i < numbers.length; i++){
-	myFunc(numbers[i],i)
-}
+let result = multiply(numbers);
+console.log(result);
