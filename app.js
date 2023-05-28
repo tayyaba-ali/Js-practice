@@ -679,9 +679,7 @@ const obj = {
 // 	return -1
 // }
 
-
 // console.log(findingNum([1, 2, 3, 5], 5));
-
 
 //  function expression
 
@@ -691,7 +689,6 @@ const obj = {
 
 // console.log(sumTwoNumbers(4,5));
 // console.log(sumTwoNumbers(5,5));
-
 
 // arrow functions
 
@@ -703,11 +700,9 @@ const obj = {
 
 // console.log(singHappyBirthday("tayyaba"));
 
-
 // const isEven = num => num % 2 === 0;
 // console.log(isEven(9));
 // console.log(isEven(8));
-
 
 // function odd (a, b) {
 // 	return a+b
@@ -719,17 +714,367 @@ const obj = {
 
 // const mutltiply = (a, b) => a * b
 
-
-
 // functions inside functions
 
-const app = () => {
+// const app = () => {
 
-	const myFunc = () => {
-		console.log("I m function inside function");
-	}
-	console.log("inside app");
-	myFunc()
+// 	const myFunc = () => {
+// 		console.log("I m function inside function");
+// 	}
+// 	console.log("inside app");
+// 	myFunc()
+// }
+
+// app()
+
+// var is function scoped
+// let and const are block scope
+
+// function hello() {
+// 	var myName = "Tayyaba";
+// }
+
+// console.log(myName);
+
+// {
+// 	var yourName = "Umra";
+// }
+// console.log(yourName);
+
+// it means var will not accessible only outside of the functions
+// in the blocks we can access this
+
+// {
+// 	let myName="Tayyaba"
+// }
+// console.log(myName);
+
+// function hello() {
+// 	let studentname="Umra"
+// }
+
+// console.log(studentname);
+
+// rest parameters\
+
+// function addNumbers(a, b, c,d,...e){
+// 	console.log(a,b,c,d);
+// 	console.log(e);
+// 	for (var i = 0; i < e.length; i++){
+// 		console.log(e[i]);
+// 	}
+// }
+
+// addNumbers(1,2,3,5,3,4,)
+
+// addAll
+
+// const addAll = (...numbers) => {
+// 	let sum = 0;
+// 	for (let num of numbers) {
+// 		sum+=num
+// 	}
+// 	return sum
+// }
+
+// console.log(addAll(6,3,4,2));
+
+// params destructuring in objects
+
+// const person = {
+// 	name: "tayyaba",
+// 	roll: 12,
+// 	course:"WMA"
+// }
+
+// function destructure({name,course}) {
+// 	console.log(name,course);
+// }
+
+// destructure(person)
+
+// function printUserInfo({ name, age }) {
+// 	console.log(name,age);
+// }
+
+// function productCard({ name, price, description }) {
+// 	console.log(name,price,description);
+// }
+
+// const getPersonDetails = ({ name, location }) => console.log(name, location);
+
+// const PostCard = function ({ title, author,date }) {
+// 	console.log(title,author,date);
+// }
+
+// function calculateArea({ length, width }) {
+// 	return length*width
+// }
+
+// for (var i = 10; i >= 1; i--){
+// 	console.log(i)
+// }
+
+// let sum = 0;
+// for (var i = 1; i <= 10; i++){
+// 	sum +=i
+// }
+// let i = 0;
+// while (i < 20) {
+// 	i=i + 2;
+// 	console.log(i);
+// }
+
+// let usertablel = +prompt('Write the table no ');
+// for (var i = 1; i <= 10; i++){
+// 	console.log(`${usertablel} X ${i} = ${usertablel*i}`);
+// }
+
+// let userFacNum = +prompt("Enter num of which you want factorial");
+
+// let result = 1;
+
+// for (var i = userFacNum; i >= 1; i--){
+// 	result *= i
+// }
+// console.log(result);
+
+// for (let i = 1; i <= 50; i++){
+// 	if (i % i+1 === 0) {
+// 		console.log(`prime number ${i}`);
+// 	}
+// }
+
+// prime numbers
+
+// for (var number= 2; number <= 50; number++){
+// 	let isPrime = true;
+// 	for (var i = 2; i < number; i++){
+// 		if (number % i === 0) {
+// 			isPrime = false;
+// 			break;
+// 		}
+// 	}
+// 	if (isPrime) {
+// 		console.log(number);
+// 	}
+// }
+
+// for (var i = 0; i <= 50; i++){
+// 	if (i % 2 !== 0) {
+// 		console.log(i);
+// 	}
+// }
+
+// let userSeries = prompt("Enter series amoung which you want largest number").split(",");
+// // console.log(userSeries);
+
+// let largestNum = userSeries[ 0 ];
+
+// for (var i = 0; i < userSeries.length; i++){
+// 	if (userSeries[ i ] > largestNum) {
+// 		largestNum= userSeries[i]
+// 	}
+// }
+// console.log(largestNum);
+
+// let palidronWord = prompt("Enter the word to be checked it is palidrome or not");
+
+// let check = "";
+// for (var i = palidronWord.length-1; i >= 0; i--){
+// 	check += palidronWord[ i ];
+
+// }
+// if (palidronWord === check) {
+// 	document.write('yes it is a palindrome word');
+// } else {
+// 	document.write('not a palidrome word ');
+// }
+
+// vowel check
+
+// let userName = "Tayyaba".toLowerCase();
+// let vowels = [ "a", "e", "i", "o", "u" ];
+// let count = 0;
+
+// for (var i = 0; i < userName.length; i++){
+// 	if (vowels.includes(userName[i])) {
+// 		count++
+// 	}
+
+// }
+// console.log(count);
+
+// let num = "55555";
+// let arr = num.split("");
+// let sum = 0;
+// for (var i = 0; i < arr.length; i++){
+// 	sum += +arr[i]
+// }
+// console.log(sum);
+
+// let num = "900087";
+
+// let arr = num.split("");
+// let reversedNum = "";
+// for (var i = arr.length - 1; i >= 0; i--){
+// 	reversedNum += +arr[i]
+// }
+// console.log(reversedNum);
+
+// let computerNum = Math.floor(Math.random() * 100 + 1);
+// console.log(computerNum);
+
+// let userNum = +prompt('Enter your num');
+
+// while (userNum !== computerNum) {
+// 	if (userNum > computerNum) {
+// 		console.log('Lower');
+// 	} else if (userNum < computerNum) {
+// 		console.log('Higher');
+// 	}
+// 	userNum = +prompt('Enter your num');
+// }
+
+// console.log('Correct');
+
+// let choices = [ "rock", "paper", "scissor" ];
+// let computerChoice = choices[ Math.floor(Math.random() * choices.length) ];
+
+
+
+// let userChoice = "rock";
+// if (userChoice === computerChoice) {
+// 	console.log("matched");
+// }
+
+
+//  Callback functions (he functions that pass as an argument to a function)
+//  Higher Order Function(The  functions that accept callback functions as a parameter)
+
+// function meraKaam(callback){
+// 	console.log("I am main function");
+// 	callback("Umra")
+// }
+
+
+// function dostKaKaam(dostkaNaam) {
+// 	console.log('Hi my name is ' + dostkaNaam);
+// }
+
+// meraKaam(dostKaKaam)
+
+// function calculate(num1, num2, callback) {
+// 	// console.log(num1,num2);
+// 	let result = callback(num1, num2);
+// 	console.log(result)
+// 	return result
+// }
+
+// function operations(a, b) {
+// 	let add = a + b;
+// 	let sub = a - b;
+// 	let mul = a * b;
+// 	return[ add,sub,mul]
+// }
+
+// console.log(calculate(12, 23, operations));
+
+// functions returning functions
+
+// function myFunc() {
+// 	function hello() {
+// 		return("hello");
+// 	}
+// 	return hello
+// }
+
+// let ans = myFunc();
+
+// console.log(ans());
+
+// function additionGenerator(num1) {
+
+// 	function another(num2) {
+// 		return num1+num2
+// 	}
+// 	return another
+	
+// }
+
+// let result = additionGenerator(9);
+// console.log(result(10));
+
+// function greetingGenerator(greetingMessage) {
+// 	return function (name) {
+// 		return `${greetingMessage} ${name}`;
+// 	}
+// }
+
+// let result = greetingGenerator("Hello everyone!");
+// let final = result("Tayaba");
+// console.log(final);
+
+// function count() {
+// 	let count = 0;
+// 	return function () {
+// 		count++;
+// 		return count
+// 	}
+// }
+
+// let increment = count();
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+
+
+// function count() {
+// 	let count = 0;
+// 	return function () {
+// 		count++;
+// 		return count
+
+// 	}
+// }
+// let increment = count();
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+
+
+// function count() {
+// 	let count = 0;
+// 	return function incre() {
+// 		count++;
+// 		return count
+// 	}
+// }
+
+// let increment = count();
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+// console.log(increment());
+
+// function powerCalculator(num) {
+// 	return function (power) {
+// 		return num **power
+// 	}
+// }
+
+// let result = powerCalculator(3);
+// console.log(result(4));
+
+
+let numbers = [ 1, 2, 3, 4 ];
+
+function myFunc(num,index) {
+	console.log(`No is ${num} and index is ${index} and mul by 2 is ${num*2}`);
 }
-
-app()
+for (var i = 0; i < numbers.length; i++){
+	myFunc(numbers[i],i)
+}
