@@ -941,13 +941,10 @@ const obj = {
 // let choices = [ "rock", "paper", "scissor" ];
 // let computerChoice = choices[ Math.floor(Math.random() * choices.length) ];
 
-
-
 // let userChoice = "rock";
 // if (userChoice === computerChoice) {
 // 	console.log("matched");
 // }
-
 
 //  Callback functions (he functions that pass as an argument to a function)
 //  Higher Order Function(The  functions that accept callback functions as a parameter)
@@ -956,7 +953,6 @@ const obj = {
 // 	console.log("I am main function");
 // 	callback("Umra")
 // }
-
 
 // function dostKaKaam(dostkaNaam) {
 // 	console.log('Hi my name is ' + dostkaNaam);
@@ -999,7 +995,7 @@ const obj = {
 // 		return num1+num2
 // 	}
 // 	return another
-	
+
 // }
 
 // let result = additionGenerator(9);
@@ -1029,7 +1025,6 @@ const obj = {
 // console.log(increment());
 // console.log(increment());
 
-
 // function count() {
 // 	let count = 0;
 // 	return function () {
@@ -1044,7 +1039,6 @@ const obj = {
 // console.log(increment());
 // console.log(increment());
 // console.log(increment());
-
 
 // function count() {
 // 	let count = 0;
@@ -1069,8 +1063,6 @@ const obj = {
 // let result = powerCalculator(3);
 // console.log(result(4));
 
-
-
 // let numbers = [ 1, 2, 3, 4 ];
 
 // function myFunc(num,index) {
@@ -1086,7 +1078,6 @@ const obj = {
 // })
 // console.log(result);
 
-
 // let names = [ "Tayyaba", "Umra", "Wajeeha" ];
 
 // function printName(name) {
@@ -1094,18 +1085,127 @@ const obj = {
 // }
 // names.forEach(printName)
 
+// let numbers = [ 1, 2, 3, 4 ];
 
-let numbers = [ 1, 2, 3, 4 ];
+// function multiply(numbers) {
+// 	let updatedArray = [];
+
+// 	numbers.forEach(num => {
+// 		updatedArray.push(num*2)
+// 	});
+// 	return updatedArray
+
+// }
+// let result = multiply(numbers);
+// console.log(result);
+
+// const books = [
+// 	{
+// 		title: 'Smarter way to learn javascript',
+// 		author: 'XYZ',
+// 	},
+// 	{
+// 		title: "python",
+// 		author:"Micheal"
+// 	},
+// 	{
+// 		title: "Js",
+// 		author:"John"
+// 	}
+// ];
+// books.forEach(function ({title,author}) {
+// 	console.log(title, author);
+// })
+
+// let numbers = [1, 2, 3, 4, 5];
+// let sum=0
+
+// numbers.forEach((num) => {
+// 	if (num % 2 === 0) {
+		
+// 		sum +=num
+// 	}
+// });
+// console.log(sum);
 
 
-function multiply(numbers) {
+
+// strings.forEach(str => {
+// 	console.log(str.length);
+// })
+
+// let numbers = [ 45, 89, 900, 110, 70 ];
+
+// let largestNum = numbers[ 0 ];
+
+// numbers.forEach(num => {
+
+// 	if (num > largestNum) {
+// 		largestNum=num
+// 	}
+// })
+// console.log(largestNum);
+
+
+
+// let strings = [ "Hellao", "Heaai", "Straing" ];
+// let found = false;
+// let count=0
+
+// strings.forEach(str => {
+// 	if(	str.includes("a")
+// 	) {
+// 		found = true;
+// 		count++
+// 	}
+// })
+
+// if (found) {
+// 	console.log("found",count);
+// }
+// else {
+// 	console.log("not found");
+// }
+
+// let names = [ 'Tayyaba', 'Umra', 'Maryam' ];
+
+// function takingNames(names) {
+// 	let string=[]
+// 	names.forEach(name => {
+// 		string.push(name)
+// 	})
+// 	return string
+// }
+
+
+// let result = takingNames(names);
+// console.log(result);
+
+// let numbers = [ -23, 45, 90, 34, 89, -90 ];
+
+// function takingNumbers(numbers) {
+// 	let updatedArray=[]
+// 	numbers.forEach(num => {
+// 		if (num > 0) {
+// 		 updatedArray.push(num)
+// 		}
+// 	});
+// 	return updatedArray
+// }
+// let result = takingNumbers(numbers);
+// console.log(result);
+
+let names = [ 'Tayyaba', 'Umrajldld', 'Maryam',"Dua" ];
+function takingNames(names) {
+
 	let updatedArray = [];
+	names.forEach(name => {
+		if (name.length > 5) {
+			updatedArray.push(name)
+		}
 
-	numbers.forEach(num => {
-		updatedArray.push(num*2)
 	});
-	return updatedArray
-	
+	return updatedArray;
 }
-let result = multiply(numbers);
+let result = takingNames(names);
 console.log(result);
