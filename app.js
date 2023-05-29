@@ -1248,15 +1248,13 @@ const obj = {
 // 	},
 // ];
 
-
 // console.log(students.map(student => {
-	
+
 // 	for (var i = student.length - 1; i >= 0; i--){
 // 		return student[i]
 // 	}
 
 // }));
-
 
 // const strings = [ 'hello', "hi", "bye" ];
 
@@ -1282,5 +1280,61 @@ const obj = {
 // 	}
 // }));
 
-const numbers = [ 1, 2, 33, 45, 67 ];
-console.log(numbers.map(num=>String(num)));
+// const numbers = [ 1, 2, 33, 45, 67 ];
+// console.log(numbers.map(num=>String(num)));
+
+// Filter Method
+
+// const numbers = [ 1, 2, 3, 4, 5 ];
+
+// console.log(numbers.filter(num => {
+// 	return num%2!==0
+// }));
+
+// function filterByType(arr, type) {
+// 	return arr.filter((element) => {
+// 		return typeof element === type;
+// 	});
+// }
+
+// console.log(filterByType([2, 'Tayyab', true, 5, 'Umra'], 'number'));
+
+// const getUniqueValues = (arr) => {
+// 	console.log(arr);
+// 	arr.filter((num,index,self) => {
+// 		console.log(num, index, self);
+// 		if (self.indexOf(num) === index) {
+// 			console.log('matched');
+// 		}
+// 	})
+
+// }
+// console.log(getUniqueValues([1,1,2,34]));
+
+// Removing duplicate elements
+
+// const numbers = [ 1, 2,2,3, 3, 4, 5, 5, 6, 7,7, 7 ];
+
+// console.log(numbers.filter((num, index, array) => {
+// 	if (array.indexOf(num) === index) {
+// 		return num
+// 	}
+// }))
+
+//Create a function that takes an array of numbers as input and uses the filter() method to return a new array containing only the prime numbers.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 9, 10, 2, 3, 13];
+
+
+console.log(numbers.filter(num => {
+	if (num < 2) {
+		return false
+	}
+	for (var i = 2; i < num; i++){
+		if (num % i === 0) {
+			return false
+		}
+	}
+	return true;
+	
+}));
