@@ -1325,7 +1325,6 @@ const obj = {
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 9, 10, 2, 3, 13];
 
-
 // console.log(numbers.filter(num => {
 // 	if (num < 2) {
 // 		return false
@@ -1336,18 +1335,61 @@ const obj = {
 // 		}
 // 	}
 // 	return true;
-	
+
 // }));
 
+// const strings = [ "hello", "moon", "noon", "mam","car","peep" ];
 
-const strings = [ "hello", "moon", "noon", "mam","car","peep" ];
+// console.log(strings.filter(str => {
+// 	let result =""
+// 	for (var i = str.length - 1; i >= 0; i--){
+// 		result+= str[i]
+// 	}
+// 	if (result === str) {
+// 		return str
+// 	}
+// }));
 
-console.log(strings.filter(str => {
-	let result =""
-	for (var i = str.length - 1; i >= 0; i--){
-		result+= str[i]
-	}
-	if (result === str) {
-		return str
-	}
-}));
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(
+// 	numbers.reduce((accumulator, currentValue) => {
+// 		return accumulator + currentValue;
+// 	}),
+// );
+
+//  accumulator 		currentValue        return
+
+//  1					2                    3
+// 3                     3                   6
+// 6                       4                10
+// 10                       5               15
+
+// const numbers = [ 5, 6, 7, 1, 2, 9 ];
+
+// console.log(numbers.reduce((accumulator, currentValue)=> {
+// 	return  accumulator+currentValue
+// }));
+
+// //  accumulator         currentValue          Return
+// // 5                       6                     11
+// // 11                       7                    18
+// // 18                        1                    19
+// // 19                        2                   21
+// // 21                            9                 30
+
+const numbers = [9, 6, 7, 2, 3, 4, 5];
+
+console.log(
+	numbers.reduce((accumulator, currentValue) => {
+		return accumulator + currentValue;
+	}),
+);
+
+//  accumulator         currentValue          Return
+// 9                      6                      15
+// 15                    7                     22
+// 22                 2                       24
+// 24                      3                       27
+// 27                  4                         31
+// 31                 5                            36
