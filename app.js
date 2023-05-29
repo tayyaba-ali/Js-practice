@@ -1323,18 +1323,31 @@ const obj = {
 
 //Create a function that takes an array of numbers as input and uses the filter() method to return a new array containing only the prime numbers.
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 9, 10, 2, 3, 13];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 9, 10, 2, 3, 13];
 
 
-console.log(numbers.filter(num => {
-	if (num < 2) {
-		return false
-	}
-	for (var i = 2; i < num; i++){
-		if (num % i === 0) {
-			return false
-		}
-	}
-	return true;
+// console.log(numbers.filter(num => {
+// 	if (num < 2) {
+// 		return false
+// 	}
+// 	for (var i = 2; i < num; i++){
+// 		if (num % i === 0) {
+// 			return false
+// 		}
+// 	}
+// 	return true;
 	
+// }));
+
+
+const strings = [ "hello", "moon", "noon", "mam","car","peep" ];
+
+console.log(strings.filter(str => {
+	let result =""
+	for (var i = str.length - 1; i >= 0; i--){
+		result+= str[i]
+	}
+	if (result === str) {
+		return str
+	}
 }));
