@@ -1378,13 +1378,13 @@ const obj = {
 // // 19                        2                   21
 // // 21                            9                 30
 
-const numbers = [9, 6, 7, 2, 3, 4, 5];
+// const numbers = [9, 6, 7, 2, 3, 4, 5];
 
-console.log(
-	numbers.reduce((accumulator, currentValue) => {
-		return accumulator + currentValue;
-	}),
-);
+// console.log(
+// 	numbers.reduce((accumulator, currentValue) => {
+// 		return accumulator + currentValue;
+// 	},10),
+// );
 
 //  accumulator         currentValue          Return
 // 9                      6                      15
@@ -1393,3 +1393,109 @@ console.log(
 // 24                      3                       27
 // 27                  4                         31
 // 31                 5                            36
+
+// const userCart = [
+// 	{productId:1,productName:"Mobile",price:18000},
+// 	{productId:2,productName:"Shampoo",price:500},
+// 	{productId:23,productName:"purse",price:5000}
+// ]
+
+// console.log(userCart.reduce((totalPrice, currentPrice) => {
+// 	return(totalPrice+currentPrice.price);
+// },0));
+
+
+// const numbers = [ 1, 2, 45, 890, 100 ];
+
+// console.log(numbers.reduce((maxValue, currentValue) => {
+// 	if (currentValue > maxValue) {
+// 		 maxValue=currentValue
+// 	}
+// 	return maxValue
+// },numbers[0]));
+
+
+// const strings = [ "Hello", "Umra", "Tayyaba", "Bye" ];
+// console.log(strings.reduce((concatedValue,currentValue) => {
+// 	return concatedValue+currentValue
+// // }));
+
+// const numbers = [ 1, 2, 3, 4 ,5];
+// console.log(
+// 	numbers.reduce((sum, currentValue) => {
+// 		return sum + currentValue;
+// 	}, 0) / numbers.length,
+// );
+
+
+// const elements = [ "hello", "tayyaba", "hello", "umra", "hello" ];
+
+
+// console.log(elements.reduce((count, currentValue) => {
+// 	if (currentValue in count) {
+// 		count[currentValue] += 1;
+// 	}
+// 	else {
+// 		count[currentValue]= 1
+
+// 	}
+// 	return count
+// },{}));
+
+
+// const elements= [[1,2],["tayyaba","hi"]];
+// console.log(elements.reduce((flattenArr, subArr)=> {
+// 	return [...flattenArr,...subArr]
+// },[]))
+
+// sort method mutates the original array
+
+// const numbers = [ 7, 1, 2, 45 ];  //1,2,7,45
+
+
+
+// numbers.sort((a,b)=>b-a);
+// console.log(numbers);
+
+// console.log("7".charCodeAt(0));
+// console.log("1".charCodeAt(0));
+// console.log("2".charCodeAt(0));
+// console.log("45".charCodeAt(0));
+
+
+// const names = [ "Tayyaba", "umra", "Saad", "SAAD", "Saac" ];
+
+// console.log(names.sort());
+
+// console.log("SAAD".charCodeAt(0));
+// console.log("Saad".charCodeAt(0));
+
+
+// Realistic Example
+
+
+// const products = [
+// 	{
+// 		productId:1,productName:"p1",price:1200
+// 	},
+// 	{
+// 		productId:2,productName:"p2",price:800
+// 	},
+// 	{
+// 		productId:3,productName:"p3",price:200
+// 	},
+// 	{
+// 		productId:4,productName:"p4",price:500
+// 	},
+// 	{
+// 		productId:5,productName:"p5",price:10000
+// 	}
+// ]
+
+// console.log(products.slice(0).sort(({ price:price1 }, { price:price2 }) => price1-price2));
+// console.log(products.slice(0).sort(({ price: price1 }, { price: price2 }) => price2 - price1));
+// console.log(products);
+
+
+// const strings = [ "hi", "hello", "bye" ];
+// console.log(strings.find(str=>str.length===3));
