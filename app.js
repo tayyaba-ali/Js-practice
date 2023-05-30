@@ -1725,3 +1725,82 @@ const obj = {
 // umraExtraInfo.set(person2, { nickname: "munnu", finaince: "Usmaa" })
 
 // console.log(person2.age,umraExtraInfo.get(person2).finaince);
+
+
+// Object assign
+
+// const obj1 = {
+// 	name: "Tayyaba",
+// 	age:22
+// }
+
+// const obj3 = {
+// 	course: "web dev",
+// 	day:"Monday"
+// }
+// const clonnedObj = Object.assign({}, obj1)
+// // console.log(obj===obj1);
+// console.log(clonnedObj);
+
+
+// const anotherClonning = Object.assign({},obj3)
+// console.log(anotherClonning===obj3);
+// console.log(anotherClonning);
+
+
+// Optional Chainning
+
+// const person = {
+// 	name: "Tayyaba",
+// 	// course:{batch1:"web dev"}
+// }
+
+// console.log(person?.name);
+// console.log(person?.course?.batch1);
+
+// const data = {
+// 	user: {
+// 		name: 'John',
+// 		address: {
+// 			street: '123 Main St',
+// 			city: 'New York',
+// 			zipCode: '10001',
+// 		},
+// 	},
+// };
+
+// const zipCode=(data?.user?.address?.zipCode);
+// console.log(zipCode|| "Not avaiale");
+
+// const user = {
+// 	name: 'Alice',
+// 	getInfo: function () {
+// 		return 'User information: ' + this.name;
+// 	},
+// };
+
+
+// const result = user?.getInfo();
+// console.log(result || "Method not available");
+// const arr = [1, 2];
+
+// const index = arr?.[ 2 ];
+// console.log(index|| "index not avaialbe");
+
+// Methods
+
+
+
+
+const obj1 = {
+	name: "Tayyaba",
+	course: "female",
+	about: ()=> {
+		console.log(`My name is ${this.name} and my course is ${this.course}`);
+
+	}
+}
+
+// console.log(obj1.gender);
+// console.log(obj1.name);
+obj1.about();
