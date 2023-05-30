@@ -1404,7 +1404,6 @@ const obj = {
 // 	return(totalPrice+currentPrice.price);
 // },0));
 
-
 // const numbers = [ 1, 2, 45, 890, 100 ];
 
 // console.log(numbers.reduce((maxValue, currentValue) => {
@@ -1413,7 +1412,6 @@ const obj = {
 // 	}
 // 	return maxValue
 // },numbers[0]));
-
 
 // const strings = [ "Hello", "Umra", "Tayyaba", "Bye" ];
 // console.log(strings.reduce((concatedValue,currentValue) => {
@@ -1427,9 +1425,7 @@ const obj = {
 // 	}, 0) / numbers.length,
 // );
 
-
 // const elements = [ "hello", "tayyaba", "hello", "umra", "hello" ];
-
 
 // console.log(elements.reduce((count, currentValue) => {
 // 	if (currentValue in count) {
@@ -1442,7 +1438,6 @@ const obj = {
 // 	return count
 // },{}));
 
-
 // const elements= [[1,2],["tayyaba","hi"]];
 // console.log(elements.reduce((flattenArr, subArr)=> {
 // 	return [...flattenArr,...subArr]
@@ -1452,8 +1447,6 @@ const obj = {
 
 // const numbers = [ 7, 1, 2, 45 ];  //1,2,7,45
 
-
-
 // numbers.sort((a,b)=>b-a);
 // console.log(numbers);
 
@@ -1462,7 +1455,6 @@ const obj = {
 // console.log("2".charCodeAt(0));
 // console.log("45".charCodeAt(0));
 
-
 // const names = [ "Tayyaba", "umra", "Saad", "SAAD", "Saac" ];
 
 // console.log(names.sort());
@@ -1470,9 +1462,7 @@ const obj = {
 // console.log("SAAD".charCodeAt(0));
 // console.log("Saad".charCodeAt(0));
 
-
 // Realistic Example
-
 
 // const products = [
 // 	{
@@ -1495,7 +1485,6 @@ const obj = {
 // console.log(products.slice(0).sort(({ price:price1 }, { price:price2 }) => price1-price2));
 // console.log(products.slice(0).sort(({ price: price1 }, { price: price2 }) => price2 - price1));
 // console.log(products);
-
 
 // const strings = [ "hi", "hello", "bye" ];
 // console.log(strings.find(str=>str.length===3));
@@ -1526,7 +1515,6 @@ const obj = {
 // const numbers = [ 2, 3, 4, 5 ];
 // console.log(numbers.every(num=>num>1));
 
-
 // const products = [
 // 	{productId:1,name:"Mobile",price:1200},
 // 	{productId:2,name:"Mobile",price:10000},
@@ -1552,7 +1540,6 @@ const obj = {
 // console.log(strings1.some(str=>str[0]==="A"));
 // console.log(strings2.some(str => str[ 0 ] === "A"));
 
-
 // const books = [
 // 	{ title: "Js", author: "Micheal", rating: 3 },
 // 	{ title: "python", author: "John", rating: 6 },
@@ -1561,7 +1548,6 @@ const obj = {
 
 // console.log(books.every(({rating})=>rating>4));
 // console.log(books.every(({ rating }) => rating >= 3));
-
 
 // const numbersDivisble = [ 1, 2, 3, 49, 7 ];
 // console.log(numbersDivisble.some(num=>num%7===0));
@@ -1580,7 +1566,6 @@ const obj = {
 
 // sets
 
-
 // duplicates are not allowed
 // const numbers = new Set([ "Tayyaba", "Umra", "Ariba" ,"tayyaba","Tayyaba"]);
 
@@ -1594,11 +1579,9 @@ const obj = {
 // console.log(string);
 // console.log(string.has("umra"));
 
-
 // for (let element of string) {
 // 	console.log(element);
 // }
-
 
 // unique elements
 
@@ -1638,7 +1621,7 @@ const obj = {
 // const numbers=[1,2,3,1,2,3]
 // console.log(removeDuplicates(numbers));
 
-// const getUniqueCharacters= string=>new Set(string) 
+// const getUniqueCharacters= string=>new Set(string)
 // const string = "Bannana";
 // console.log(getUniqueCharacters(string));
 
@@ -1647,3 +1630,98 @@ const obj = {
 
 // const areDisjoint = (setA, setB) => new Set([ ...setA ].filter((e) => !setB.has(e)));
 // console.log(areDisjoint(set1,set2));
+
+// Map data structure
+
+// const person = new Map();
+// person.set(1,"one")
+// person.set("myName","Tayyaba")
+// person.set("myHobby","codinh")
+// console.log(person);
+
+// for (let [key,value] of person) {
+// 	console.log(value,typeof key);
+// }
+// console.log(person.get("myName"));
+
+// const person = new Map([ [ "firstName", "Tayyaba" ], [ "age", 22 ], [ "course", "Web dev" ] ]);
+
+// console.log(person);
+// console.log(person.get("firstName"));
+// console.log(person.get("age"));
+// console.log(person.get("course"));
+// for (let [key,value] of person) {
+// 	console.log(key,typeof key , value);
+// }
+
+// const phoneBook = new Map([
+// 	['Tayyaba', '03168902299'],
+// 	['Umra', '03156789'],
+// 	['Saad', '879628'],
+// ]);
+
+// phoneBook.set(['Bibi', '888934973']);
+
+// console.log(phoneBook.get('Tayyaba'));
+// console.log(phoneBook.get('Umra'));
+// console.log(phoneBook.get('Saad'));
+
+// function frequencyTest(string) {
+// 	let words = string.split(' ');   //["hello","word","hello"]
+// 	const frequency = new Map();  // {["hello",2],["world",1]}
+
+// 	for (let word of words) {  //"hello"
+// 		console.log(word);
+// 		const count = frequency.get(word) || 0;
+// 		frequency.set(word,count+1)
+// 	}
+// 	return frequency
+// }
+
+// console.log(frequencyTest('hello world hello'));
+
+// character count
+
+// function characterCount(string) {
+// 	let characters = string.split("");
+// 	let frequency = new Map()
+// 	for(let char of characters) {
+// 		const count= frequency.get(char) || 0;
+// 		frequency.set(char,count+1)
+// 	}
+// 	return frequency
+// }
+
+// console.log(characterCount("Tayyaba"));
+
+// function uniqueValue(numbers) {
+// 	let frequency = new Map()
+// 	for (let num of numbers) {
+// 		const count = frequency.get(num) || 0;
+// 		frequency.set(num,count+1)
+// 	}
+// 	return frequency
+// }
+
+// console.log(uniqueValue([1,1,22,22,3,3]));
+
+// const person1 = {
+// 	name: 'Tayyaba',
+// 	age: 22,
+// };
+
+// const person2 = {
+// 	name: "Umra",
+// 	age:21
+// }
+
+// const personExtraInfo = new Map();
+// personExtraInfo.set(person1, { course: 'web dev', hobby: 'coding' });
+
+// console.log(personExtraInfo);
+// console.log(person1.age, personExtraInfo.get(person1).course);
+
+// const umraExtraInfo = new Map();
+// umraExtraInfo.set(person2, { nickname: "munnu", finaince: "Usmaa" })
+
+// console.log(person2.age,umraExtraInfo.get(person2).finaince);
