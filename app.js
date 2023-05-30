@@ -1499,3 +1499,69 @@ const obj = {
 
 // const strings = [ "hi", "hello", "bye" ];
 // console.log(strings.find(str=>str.length===3));
+
+// const students = [
+// 	{id:1,name:"Tayyaba"},
+// 	{id:2,name:"umra"},
+// 	{id:3,name:"wajeeha"},
+// 	{id:4,name:"laila"},
+// ]
+
+// console.log(students.find(({ id }) => id === 4));
+// console.log(students);
+
+// const numbers = [ 1, 1, 4, 5 ];
+// console.log(numbers.find(num => num % 2 === 0));
+
+// const strings = [ "hello", "hi", "num" ];
+
+// function checkString(arr, string) {
+// 	 return arr.find((str) => str === string) !== undefined;
+// }
+// console.log(checkString(strings, 'hello'));
+// console.log(checkString(strings, 'mine'));
+
+// every some
+
+// const numbers = [ 2, 3, 4, 5 ];
+// console.log(numbers.every(num=>num>1));
+
+
+// const products = [
+// 	{productId:1,name:"Mobile",price:1200},
+// 	{productId:2,name:"Mobile",price:10000},
+// 	{productId:3,name:"Mobile",price:20000},
+// ]
+
+// // console.log(products.every(({price})=>price<20_000));
+
+// console.log(products.some(({price})=>price>20_000));
+
+function checkingPositive(arr) {
+	return arr.every(num=>num>0)
+}
+
+const numbers1 = [ 1, 6, 8, 9, 2 ];
+const numbers2 = [ 1, 6, 8, 9, -8 ];
+console.log(checkingPositive(numbers1));
+console.log(checkingPositive(numbers2));
+
+const strings1 = [ "hello", "Ashish", "umra" ];
+const strings2 = [ "hello", "ashish", "umra" ];
+
+console.log(strings1.some(str=>str[0]==="A"));
+console.log(strings2.some(str => str[ 0 ] === "A"));
+
+
+const books = [
+	{ title: "Js", author: "Micheal", rating: 3 },
+	{ title: "python", author: "John", rating: 6 },
+	{ title: "React", author: "Bilish", rating: 5 },
+]
+
+console.log(books.every(({rating})=>rating>4));
+console.log(books.every(({ rating }) => rating >= 3));
+
+
+const numbersDivisble = [ 1, 2, 3, 49, 7 ];
+console.log(numbersDivisble.some(num=>num%7===0));
