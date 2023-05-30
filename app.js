@@ -1789,18 +1789,61 @@ const obj = {
 
 // Methods
 
+// console.log(window.prompt());
 
 
+// const obj1 = {
+// 	name: "Tayyaba",
+// 	course: "female",
+// 	about: function(){
+// 		console.log(`My name is ${this.name} and my course is ${this.course}`);
 
-const obj1 = {
-	name: "Tayyaba",
-	course: "female",
-	about: ()=> {
-		console.log(`My name is ${this.name} and my course is ${this.course}`);
+// 	}
+// }
 
-	}
+// // console.log(obj1.gender);
+// // console.log(obj1.name);
+// obj1.about();
+
+
+// function hello() {
+// 	console.log(this);
+// }
+
+// let name = "Tayyay"
+
+// // const name = function () {
+// // 	console.log(this);
+// // }
+// const myWorld = () => {
+// 	console.log(this.name);
+// }
+
+
+function print() {
+	console.log(`Hello my name is ${this.name} and my age is ${this.age}`);
 }
 
-// console.log(obj1.gender);
-// console.log(obj1.name);
-obj1.about();
+const person1 = {
+	name: "Tayyaba",
+	age: 22,
+	about: print
+}
+const person2= {
+	name: 'umra',
+	age: 21,
+	about: print,
+};
+
+const person3 = {
+	name: 'saad',
+	age: 23,
+	about: print,
+};
+
+
+
+
+person1.about()
+person2.about()
+person3.about()
