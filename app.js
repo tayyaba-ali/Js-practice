@@ -1537,31 +1537,113 @@ const obj = {
 
 // console.log(products.some(({price})=>price>20_000));
 
-function checkingPositive(arr) {
-	return arr.every(num=>num>0)
-}
+// function checkingPositive(arr) {
+// 	return arr.every(num=>num>0)
+// }
 
-const numbers1 = [ 1, 6, 8, 9, 2 ];
-const numbers2 = [ 1, 6, 8, 9, -8 ];
-console.log(checkingPositive(numbers1));
-console.log(checkingPositive(numbers2));
+// const numbers1 = [ 1, 6, 8, 9, 2 ];
+// const numbers2 = [ 1, 6, 8, 9, -8 ];
+// console.log(checkingPositive(numbers1));
+// console.log(checkingPositive(numbers2));
 
-const strings1 = [ "hello", "Ashish", "umra" ];
-const strings2 = [ "hello", "ashish", "umra" ];
+// const strings1 = [ "hello", "Ashish", "umra" ];
+// const strings2 = [ "hello", "ashish", "umra" ];
 
-console.log(strings1.some(str=>str[0]==="A"));
-console.log(strings2.some(str => str[ 0 ] === "A"));
-
-
-const books = [
-	{ title: "Js", author: "Micheal", rating: 3 },
-	{ title: "python", author: "John", rating: 6 },
-	{ title: "React", author: "Bilish", rating: 5 },
-]
-
-console.log(books.every(({rating})=>rating>4));
-console.log(books.every(({ rating }) => rating >= 3));
+// console.log(strings1.some(str=>str[0]==="A"));
+// console.log(strings2.some(str => str[ 0 ] === "A"));
 
 
-const numbersDivisble = [ 1, 2, 3, 49, 7 ];
-console.log(numbersDivisble.some(num=>num%7===0));
+// const books = [
+// 	{ title: "Js", author: "Micheal", rating: 3 },
+// 	{ title: "python", author: "John", rating: 6 },
+// 	{ title: "React", author: "Bilish", rating: 5 },
+// ]
+
+// console.log(books.every(({rating})=>rating>4));
+// console.log(books.every(({ rating }) => rating >= 3));
+
+
+// const numbersDivisble = [ 1, 2, 3, 49, 7 ];
+// console.log(numbersDivisble.some(num=>num%7===0));
+
+// Fill
+
+// const myArray = new Array(10).fill("Tayyaba");
+// console.log(myArray);
+
+// const myScores = new Array(100).fill(100);
+// console.log(myScores);
+
+// const numbers = [ 1, 2, 3, 4, 5, 67, 7 ];
+// numbers.fill(0, 2, 5);
+// console.log(numbers);
+
+// sets
+
+
+// duplicates are not allowed
+// const numbers = new Set([ "Tayyaba", "Umra", "Ariba" ,"tayyaba","Tayyaba"]);
+
+// console.log(numbers);
+// console.log(numbers[2]);
+// console.log(numbers.length);
+
+// const string = new Set("Tayyaba");
+// console.log(string);
+// string.add("umra");
+// console.log(string);
+// console.log(string.has("umra"));
+
+
+// for (let element of string) {
+// 	console.log(element);
+// }
+
+
+// unique elements
+
+// const numbers = [ "Tayyaba", "Tayyaba", 1, 2, 1, "umra", 2,"mine" ];
+// const uniqueElemets = new Set(numbers)
+// console.log(uniqueElemets);
+
+// let length = 0;
+// for (let item of uniqueElemets) {
+// 	length++
+// }
+// console.log(length);
+
+// const setA = new Set([1, 2, 3]);
+// const setB = new Set([ 3, 4, 5 ])
+
+// // union;
+
+// const union = new Set([ ...setA, ...setB ])
+// console.log(union);
+
+// // intersection
+
+// const intersection = new Set([ ...setA ].filter(num => setB.has(num)));
+// console.log(intersection);
+
+// // Difference
+
+// const differenec = new Set([...setA].filter(num=>!setB.has(num)))
+// console.log(differenec);
+
+// Question # 01
+
+// function removeDuplicates(array) {
+// 	return new Set(array)
+// }
+// const numbers=[1,2,3,1,2,3]
+// console.log(removeDuplicates(numbers));
+
+// const getUniqueCharacters= string=>new Set(string) 
+// const string = "Bannana";
+// console.log(getUniqueCharacters(string));
+
+// const set1 = new Set([ "Tayyaba", "umra", 1, 2 ])
+// const set2 = new Set([ "hello", "umra", 0, 7 ])
+
+// const areDisjoint = (setA, setB) => new Set([ ...setA ].filter((e) => !setB.has(e)));
+// console.log(areDisjoint(set1,set2));
