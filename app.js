@@ -1861,11 +1861,20 @@ const obj = {
 
 
 
-console.log("hello world");
+// console.log("hello world");
 
-if (false) {
-	console.log("Console.log is working");
-}
-else {
-	console.log("Not working");
-}
+// if (false) {
+// 	console.log("Console.log is working");
+// }
+// else {
+// 	console.log("Not working");
+// }
+
+
+const numbers = [ 1, 2, 3, 3, 4, 5 ];
+
+console.log(numbers.filter((num, index, array) => {
+	if (array.indexOf(num) === index) {
+		return num
+	}
+}));
