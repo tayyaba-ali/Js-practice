@@ -1862,3 +1862,10 @@ const obj = {
 
 
 console.log("hello world");
+
+if (false) {
+	console.log("Console.log is working");
+}
+else {
+	console.log("Not working");
+}
