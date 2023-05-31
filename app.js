@@ -1820,30 +1820,41 @@ const obj = {
 // }
 
 
-function print() {
-	console.log(`Hello my name is ${this.name} and my age is ${this.age}`);
-}
+// function print() {
+// 	console.log(`Hello my name is ${this.name} and my age is ${this.age}`);
+// }
 
-const person1 = {
-	name: "Tayyaba",
-	age: 22,
-	about: print
-}
-const person2= {
-	name: 'umra',
-	age: 21,
-	about: print,
-};
+// const person1 = {
+// 	name: "Tayyaba",
+// 	age: 22,
+// 	about: print
+// }
+// const person2= {
+// 	name: 'umra',
+// 	age: 21,
+// 	about: print,
+// };
 
-const person3 = {
-	name: 'saad',
-	age: 23,
-	about: print,
-};
-
-
+// const person3 = {
+// 	name: 'saad',
+// 	age: 23,
+// 	about: print,
+// };
 
 
-person1.about()
-person2.about()
-person3.about()
+
+
+// person1.about()
+// person2.about()
+// person3.about()
+// // behaviour of this in functions
+
+// function reverseInGroups(arr, n, k){
+// 	let start = arr.slice(0, k)
+// 	let remain = arr.slice(k)
+       
+// 	return([...start.reverse(), ...remain.reverse()]);
+// }
+
+// console.log(reverseInGroups([1,2,3,4,5],5,3));
+// console.log(reverseInGroups([3,3,5,6,7,8,9],5,4));
