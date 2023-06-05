@@ -1968,3 +1968,22 @@ const person2 = {
 // TODO: Use the call() method to invoke the greet() function with person2 as the context. Print the greeting.
 
 greet.call(person2)	
+
+function about(hobby, musician) {
+	console.log(`${this.firstName} and my hobby is ${hobby} and fvrt musician is ${musician}`);
+}
+
+const per1 = {
+	firstName: "Tayyaba",
+	
+}
+const per2 = {
+	firstName: 'Umra',
+};
+
+//  call and apply are same but in call we have to pass the arguments in the form of array
+
+// in bind we can use the separte argemnets or in the form of array and it returns a functions whom we can call later
+
+let func = about.bind(per1, 'reading', 'Atif Aslam');
+func()
