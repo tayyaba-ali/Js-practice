@@ -15,7 +15,7 @@
 
 // var student = "tayyaba";
 // console.log(typeof student);
-// console.log(this);
+// console.this);
 
 // console.log(window.student);
 
@@ -1871,10 +1871,100 @@ const obj = {
 // }
 
 
-// const numbers = [ 1, 2, 3, 3, 4, 5 ];
+
+// const numbers = [ 1, 2, 3, 3,4, 4, 5 ];
 
 // console.log(numbers.filter((num, index, array) => {
 // 	if (array.indexOf(num) === index) {
 // 		return num
 // 	}
 // }));
+
+// console.log(numbers);
+
+// const obj2 = {
+// 	firstName: "Tayyaba",
+// 	course: "Web dev",
+// 	// about: function () {
+// 	// 	console.log(`My name is ${this.firstName} and i am currently enrolled in ${this.course}`);
+// 	// }
+// 	about: ()=>console.log(firstName)
+// }
+
+
+
+// obj2.about()
+
+// const num = 10;
+
+// function multiplyByTwo(num) {
+// 	num *= 2
+// }
+
+// multiplyByTwo(num);
+// console.log(num);
+
+// Call
+
+// function Birthday() {
+// 	console.log("Happy Birthday");
+// }
+
+// Birthday.call()
+
+// function mySelf() {
+// 	console.log(`my name is ${this.firstName } and my age is ${this.course}`);
+// }
+
+// const obj1 = {
+// 	firstName: "tayyaba",
+// 	course:"Web dev",
+// 	about: function (age) {
+// 		console.log(`My name is ${this.firstName} and i am enrolled in ${this.course} and my age is ${age}`);
+// 	}
+// }
+// const obj2 = {
+// 	firstName: 'Umra',
+// 	course: 'python',
+// 	about: function (age) {
+// 		console.log(`My name is ${this.firstName} and i am enrolled in ${this.course} and my age is ${age}`);
+// 	},
+// };
+// // obj2.about.call(obj1,22)
+// // obj1.about.call(obj1,21)
+
+// mySelf.call(obj1)
+// mySelf.call(obj2)
+
+
+const car = {
+  brand: "Ford",
+  model: "Mustang",
+  getDetails: function() {
+    console.log(`This car is a ${this.brand} ${this.model}.`);
+  }
+};
+
+const anotherCar = {
+  brand: "Tesla",
+  model: "Model S"
+};
+
+// TODO: Use the call() method to invoke the getDetails() method of the car object with anotherCar as the context. Print the car details.
+
+car.getDetails.call(anotherCar)
+function greet() {
+  console.log(`Hello, ${this.name}!`);
+}
+
+const person1 = {
+  name: "John"
+};
+
+const person2 = {
+  name: "Jane"
+};
+
+// TODO: Use the call() method to invoke the greet() function with person2 as the context. Print the greeting.
+
+greet.call(person2)	
