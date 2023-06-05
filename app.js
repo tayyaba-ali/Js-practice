@@ -1726,7 +1726,6 @@
 
 // // console.log(person2.age,umraExtraInfo.get(person2).finaince);
 
-
 // // Object assign
 
 // // const obj1 = {
@@ -1742,11 +1741,9 @@
 // // // console.log(obj===obj1);
 // // console.log(clonnedObj);
 
-
 // // const anotherClonning = Object.assign({},obj3)
 // // console.log(anotherClonning===obj3);
 // // console.log(anotherClonning);
-
 
 // // Optional Chainning
 
@@ -1779,7 +1776,6 @@
 // // 	},
 // // };
 
-
 // // const result = user?.getInfo();
 // // console.log(result || "Method not available");
 // // const arr = [1, 2];
@@ -1790,7 +1786,6 @@
 // // Methods
 
 // // console.log(window.prompt());
-
 
 // // const obj1 = {
 // // 	name: "Tayyaba",
@@ -1805,7 +1800,6 @@
 // // // console.log(obj1.name);
 // // obj1.about();
 
-
 // // function hello() {
 // // 	console.log(this);
 // // }
@@ -1818,7 +1812,6 @@
 // // const myWorld = () => {
 // // 	console.log(this.name);
 // // }
-
 
 // // function print() {
 // // 	console.log(`Hello my name is ${this.name} and my age is ${this.age}`);
@@ -1841,9 +1834,6 @@
 // // 	about: print,
 // // };
 
-
-
-
 // // person1.about()
 // // person2.about()
 // // person3.about()
@@ -1852,14 +1842,12 @@
 // // function reverseInGroups(arr, n, k){
 // // 	let start = arr.slice(0, k)
 // // 	let remain = arr.slice(k)
-       
+
 // // 	return([...start.reverse(), ...remain.reverse()]);
 // // }
 
 // // console.log(reverseInGroups([1,2,3,4,5],5,3));
 // // console.log(reverseInGroups([3,3,5,6,7,8,9],5,4));
-
-
 
 // // console.log("hello world");
 
@@ -1869,8 +1857,6 @@
 // // else {
 // // 	console.log("Not working");
 // // }
-
-
 
 // // const numbers = [ 1, 2, 3, 3,4, 4, 5 ];
 
@@ -1890,8 +1876,6 @@
 // // 	// }
 // // 	about: ()=>console.log(firstName)
 // // }
-
-
 
 // // obj2.about()
 
@@ -1936,7 +1920,6 @@
 // // mySelf.call(obj1)
 // // mySelf.call(obj2)
 
-
 // const car = {
 //   brand: "Ford",
 //   model: "Mustang",
@@ -1975,7 +1958,7 @@
 
 // const per1 = {
 // 	firstName: "Tayyaba",
-	
+
 // }
 // const per2 = {
 // 	firstName: 'Umra',
@@ -1999,23 +1982,85 @@
 // 	}
 // }
 
-
 // books.about.call(books)
-
 
 // // warning
 // // const store =books.about.bind(books).bind(books);
 // // store()
 
-
-
 // Shortand
-const person1 = {
-	firstName: "Tayyaba",
-	couse: "Web dev",
-	about () {
-		console.log(`My name is ${this.firstName} and i am enrolled in ${this.couse}`);
-	}
+// const person1 = {
+// 	firstName: "Tayyaba",
+// 	couse: "Web dev",
+// 	about () {
+// 		console.log(`My name is ${this.firstName} and i am enrolled in ${this.couse}`);
+// 	}
+// }
+
+// person1.about()
+
+// const user1 = {
+// 	name: 'Tayyaba',
+// 	age: 21,
+// 	address: 'North Karachi',
+// 	about() {
+// 		return `My name is ${name} and my age is ${this.age}`;
+// 	},
+// 	is18() {
+// 		return this.age >= 18;
+// 	},
+// };
+// console.log(user1.about());
+// console.log(user1.is18());
+
+const userMethods = {
+	about: function () {
+		return `My name is ${name} and my age is ${this.age}`;
+	},
+	is18: function () {
+		return this.age >= 18;
+	},
+};
+
+function createUser(name, age, address) {
+	let user = {};
+	user.Name = name;
+	user.age = age;
+	user.address = address;
+	user.about= userMethods.about;
+	user.is18= userMethods.is18;
+	return user;
 }
 
-person1.about()
+let user32 = createUser('Tayyaba', 22, 'North Karachi');
+let user22 = createUser('Umra', 9, 'Nepal');
+console.log(user32);
+console.log(user32.is18());
+console.log(user32.is18());
+console.log(user32.about());
+console.log(user22.is18());
+console.log(user22.about());
+
+//  the problem is that when the objects are creating the methods are again creating which can hang my memory so to get rid of this we can create them separately and use them as a reference
+
+
+
+const obj1 = {
+	key1: "value1",
+	key2:"value2"
+}
+
+// let obj2 = {}
+// another way
+
+
+let obj2 = Object.create(obj1)
+
+obj2.key3="value3"
+
+// const obj2 = {
+// 	key3:"value2"
+// }
+console.log(obj2.__proto__);
+console.log(obj2.key1);
+console.log(obj2.key3);
