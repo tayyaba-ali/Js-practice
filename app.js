@@ -2248,6 +2248,10 @@ class Person{
 		this.lastName = lastName;
 		this.age=age
 	}
+	static userInfo() {
+		console.log("User is from pakistan");
+	}
+	static nationality= "Pakistani"
 	get fullName() {
 		console.log(`${this.firstName} ${this.lastName}`);
 	}
@@ -2262,9 +2266,12 @@ console.log(person1);
 person1.fullName;
 person1.fullName = "Umra Badar";
 console.log(person1);
-
+Person.userInfo() // calling from the main class
+console.log(Person.nationality); // calling prop from main class
 
 //  getters and setters are converting the methods into property we can treat them as props
 
-// get to get 
-//  set if we want to change 
+// get to get
+//  set if we want to change
+
+// static props and methods just write static keyword
