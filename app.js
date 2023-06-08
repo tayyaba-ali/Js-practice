@@ -2275,3 +2275,27 @@ console.log(Person.nationality); // calling prop from main class
 //  set if we want to change
 
 // static props and methods just write static keyword
+
+
+// inheritance
+
+
+class Person {
+	constructor(firstName, lastName, age) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+	}
+	static userInfo() {
+		console.log('User is from pakistan');
+	}
+	static nationality = 'Pakistani';
+	get fullName() {
+		console.log(`${this.firstName} ${this.lastName}`);
+	}
+	set fullName(fullName) {
+		const [firstName, lastName] = fullName.split(' ');
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+}
