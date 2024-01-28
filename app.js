@@ -2359,7 +2359,32 @@ let myName = "Tayyaba";
 
 // String to number
 
-let string = "Tayyaba";
-let Numbered = Number(string);
-console.log(typeof +string);
-console.log(typeof Numbered);
+// let string = "Tayyaba";
+// let Numbered = Number(string);
+// console.log(typeof +string);
+// console.log(typeof Numbered);
+
+let firstname = "Tayyaba";
+let lastname = "Ali";
+// let num1 = +"12"
+// let num2 = +"90"
+
+// let merge = firstname +" "+ lastname;
+// console.log(merge);
+// console.log(+"Tayyaba"*"90");
+
+//  Template literals
+// let merge = `My name is ${firstname} and my last name is ${lastname}`
+// console.log(merge);
+
+// let aboutMe;
+// console.log(typeof merge);
+// aboutMe = "Tayyaba"
+// console.log(typeof aboutMe,aboutMe);
+
+let number = 343752793659365936529736;
+let number1 = BigInt(69763596295693256932569)
+console.log(Number.MAX_SAFE_INTEGER);
+let number2= 7420740724074n
+console.log(typeof number1);
+console.log(typeof number2);
