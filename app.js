@@ -2343,5 +2343,23 @@ let myName = "Tayyaba";
 
 
 // capatilize myName
-myName = myName[ 0 ].toUpperCase() + myName.slice(1).toLowerCase();
-console.log(myName);
+// myName = myName[ 0 ].toUpperCase() + myName.slice(1).toLowerCase();
+// console.log(myName);
+
+// let sliccedText = myName.slice(-3,-5)
+// console.log(sliccedText);
+// console.log("hello world");
+
+// string to number and number to string
+
+// let number = 1233 + "";
+// let numberToString = String(number)
+// // console.log(typeof number);
+// console.log(typeof numberToString);
+
+// String to number
+
+let string = "Tayyaba";
+let Numbered = Number(string);
+console.log(typeof +string);
+console.log(typeof Numbered);
