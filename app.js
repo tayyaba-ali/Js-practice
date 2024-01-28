@@ -2382,9 +2382,41 @@ let lastname = "Ali";
 // aboutMe = "Tayyaba"
 // console.log(typeof aboutMe,aboutMe);
 
-let number = 343752793659365936529736;
-let number1 = BigInt(69763596295693256932569)
-console.log(Number.MAX_SAFE_INTEGER);
-let number2= 7420740724074n
-console.log(typeof number1);
-console.log(typeof number2);
+// let number = 343752793659365936529736;
+// let number1 = BigInt(69763596295693256932569)
+// console.log(Number.MAX_SAFE_INTEGER);
+// let number2= 7420740724074n
+// console.log(typeof number1);
+// console.log(typeof number2);
+// console.log(number2+number1);
+// console.log("8"!=="8");
+
+// Even and odd numbers
+// let number = 3;
+// if (number%2===0) {
+//     console.log("The number is even");
+// }
+// else {
+//     console.log("The number is odd");
+// }
+// // positive and negative numbers
+
+// let number1 = 90;
+// if (number1 > 0) {
+//     console.log("The number is positive");
+// }
+// else if(number1 ===0) {
+//     console.log("The number is zero");
+// }
+// else {
+//     console.log("The number is negative");
+// }
+
+// falsy values
+
+if (-1) {
+    console.log("TRuthy valus are printing");
+}
+else {
+    console.log("falsy values");
+}
