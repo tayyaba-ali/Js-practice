@@ -2149,10 +2149,9 @@
 
 // // // // user1.about()
 
-
 // // // // for (let key in user1) {
 // // // // 	if (user1.hasOwnProperty(key)) {
-		
+
 // // // // 		console.log(key);
 // // // // 	}
 // // // // }
@@ -2163,7 +2162,6 @@
 
 // // // // console.log(Object.getPrototypeOf(numbers));
 
-
 // // // // In es6 we use classess
 
 // // // class CreateUser{
@@ -2172,7 +2170,7 @@
 // // // 		this.course = course;
 // // // 		this.rollNo=rollNo
 // // // 	}
-	
+
 // // // 	about() {
 // // // 		console.log(`My name is ${this.name} and my roll no is ${this.rollNo}`);
 // // // 	}
@@ -2204,7 +2202,6 @@
 // // console.log(animal1.name);
 // // animal1.eat()
 
-
 // // class Dog {
 // // 	constructor(name, age) {
 // // 		this.name = name;
@@ -2235,7 +2232,6 @@
 // // console.log(cat1);
 // // console.log(cat1.run());
 // // console.log(cat1.eat);
-
 
 // // and i want to add more properties then the parents' constructor is not enough
 // //  what if we have same methods in the sub and super class
@@ -2276,9 +2272,7 @@
 
 // // // static props and methods just write static keyword
 
-
 // // // inheritance
-
 
 // // class Person {
 // // 	constructor(firstName, lastName, age) {
@@ -2334,13 +2328,12 @@
 
 // string indexing rules
 
-let myName = "Tayyaba";
+let myName = 'Tayyaba';
 // console.log(myName[myName.length-1]);
 
 // myName=myName.trim()
 // myName=myName.toUpperCase()
 // myName=myName.toLowerCase()
-
 
 // capatilize myName
 // myName = myName[ 0 ].toUpperCase() + myName.slice(1).toLowerCase();
@@ -2364,8 +2357,8 @@ let myName = "Tayyaba";
 // console.log(typeof +string);
 // console.log(typeof Numbered);
 
-let firstname = "Tayyaba";
-let lastname = "Ali";
+let firstname = 'Tayyaba';
+let lastname = 'Ali';
 // let num1 = +"12"
 // let num2 = +"90"
 
@@ -2414,9 +2407,52 @@ let lastname = "Ali";
 
 // falsy values
 
-if (-1) {
-    console.log("TRuthy valus are printing");
-}
-else {
-    console.log("falsy values");
+// if (-1) {
+//     console.log("TRuthy valus are printing");
+// }
+// else {
+//     console.log("falsy values");
+// }
+
+// ternary opetators
+
+// let age = 10;
+// let drink = age<5 ? "You are eligible" : "You are not eligible";
+// console.log(drink);
+
+// let userName = 'Tayyaba';
+// let age = 22;
+// if (age > 50 && userName === 'Tayyaba') {
+// 	console.log('working');
+// } else {
+// 	console.log('Not working');
+// }
+// console.log(""|| "Tayyyab"||false);
+// console.log(0 && "Tayyyab" &&false);
+
+// Guessing number games
+
+// let winnningNumber = 9;
+// let userNumber = prompt("Guess number")
+
+// if (userNumber === winnningNumber) {
+//     console.log("You guessed it");
+// }
+// else if (userNumber > 9) {
+//     console.log("Too big");
+// }
+// else {
+//     console.log("too small");
+// }
+let day = 10;
+switch (day) {
+	case 0:
+		console.log('SUnaday');
+        break;
+    case 1:
+        console.log("Monday");
+        break;
+    default:
+        console.log("Saturday");
+        break;
 }
