@@ -2443,16 +2443,52 @@ let lastname = 'Ali';
 // }
 // else {
 //     console.log("too small");
+// // }
+// let day = 10;
+// switch (day) {
+// 	case 0:
+// 		console.log('SUnaday');
+//         break;
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     default:
+//         console.log("Saturday");
+//         break;
 // }
-let day = 10;
-switch (day) {
-	case 0:
-		console.log('SUnaday');
-        break;
-    case 1:
-        console.log("Monday");
-        break;
-    default:
-        console.log("Saturday");
-        break;
-}
+
+// counting 0 to 9
+
+// let count = 0;
+// while (count <= 9) {
+//     console.log(count);
+//     count++;
+// }
+// console.log(count);
+// console.log("hello");
+// // first 10 natural number sum
+
+// let num = 1;
+// let total = 0;
+// while (num <= 10) {
+//     total += num;
+//     num++
+
+// }
+// console.log(total);
+// console.log("hih");
+
+// for loop
+
+// for (var i = 0; i <= 10; i+2){
+//     console.log(i);
+// }
+
+// do while loop
+
+let i = 11;
+do{
+    console.log(i);
+    i++
+} while (i <= 10)
+console.log(i);
