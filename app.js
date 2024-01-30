@@ -2492,3 +2492,11 @@ do{
     i++
 } while (i <= 10)
 console.log(i);
+
+// arrays
+
+const colors=[1,2,3,4]
+let result = colors.map((color, index) => {
+	console.log(color);
+});
+console.log(result);
