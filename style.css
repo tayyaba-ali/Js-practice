@@ -1,0 +1,12 @@
+li{
+    border: 1px solid red;
+    visibility: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    /* margin-top: 20px;
+    margin-bottom: 30px; */
+    padding: 10px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}

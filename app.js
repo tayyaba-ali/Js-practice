@@ -2500,3 +2500,5 @@ let result = colors.map((color, index) => {
 	console.log(color);
 });
 console.log(result);
+
+console.log("js");
