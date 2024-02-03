@@ -2541,9 +2541,47 @@
 //     console.log("city not found");
 // }
 
-for (var i = 0; i < 10; i++){
-    if (i === 8) {
-        continue
-    }
-    console.log(i);
-}
+// for (var i = 0; i < 10; i++){
+//     if (i === 8) {
+//         continue
+//     }
+//     console.log(i);
+// }
+
+
+// let i = 10;
+// do {
+//     console.log(i);
+//     i++
+// }
+// while (i < 10);
+
+// const colors = [ "red", "green", "blue", "yellow" ]
+// console.log(colors);
+
+// colors[ 3 ] = "Tayyaba"
+// const ibj = {
+    
+// }
+// // console.log(colors[colors.length-1]);
+// console.log(colors);
+// console.log(typeof colors, typeof ibj);
+// console.log(Array.isArray(colors));
+
+
+// Methods of arrays
+
+const numbers=["1","2","3"]
+
+
+console.log("before pushing ");
+console.log(numbers);
+console.log(numbers.push('45'));
+console.log("after pushing ");
+console.log(numbers);
+
+console.log(numbers.pop());
+
+console.log(numbers.unshift("1"));
+console.log(numbers);
+console.log(numbers.shift());
