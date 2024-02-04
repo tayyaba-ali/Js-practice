@@ -2571,17 +2571,31 @@
 
 // Methods of arrays
 
-const numbers=["1","2","3"]
+// const numbers=["1","2","3"]
 
 
-console.log("before pushing ");
-console.log(numbers);
-console.log(numbers.push('45'));
-console.log("after pushing ");
-console.log(numbers);
+// console.log("before pushing ");
+// console.log(numbers);
+// console.log(numbers.push('45'));
+// console.log("after pushing ");
+// console.log(numbers);
 
-console.log(numbers.pop());
+// console.log(numbers.pop());
 
-console.log(numbers.unshift("1"));
-console.log(numbers);
-console.log(numbers.shift());
+// console.log(numbers.unshift("1"));
+// console.log(numbers);
+// console.log(numbers.shift());
+
+// primitives vs references or non primitives
+
+let num1 = 12;
+let num2 = num1
+num1++
+console.log(num1);
+console.log(num2);
+
+let arr1 =["1","2","3"]
+let arr2 = arr1;
+arr1.push("5")
+console.log(arr1);
+console.log(arr2);
