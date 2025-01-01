@@ -2588,14 +2588,77 @@
 
 // primitives vs references or non primitives
 
-let num1 = 12;
-let num2 = num1
-num1++
-console.log(num1);
-console.log(num2);
+// let num1 = 12;
+// let num2 = num1
+// num1++
+// console.log(num1);
+// console.log(num2);
 
-let arr1 =["1","2","3"]
-let arr2 = arr1;
-arr1.push("5")
-console.log(arr1);
-console.log(arr2);
+// let arr1 =["1","2","3"]
+// let arr2 = arr1;
+// arr1.push("5")
+// console.log(arr1);
+// console.log(arr2);
+
+
+
+
+// year 2025 every month need to revise javascript concepts basic to advance
+// New Year resolution (Insha Allah will try my best to achieve it)
+
+// console.log("Hello World");
+
+// var myName = "Tayyaba"
+// var myName = "Umra"
+// console.log(myName);
+
+
+
+"use strict"
+// Declared + Initialization
+
+var myName = "Tayyaba";
+
+//only declared
+
+var myRollNo;
+
+//can be done initialization later
+
+myRollNo = 12;
+
+// updating a variable called reassignment
+
+myName = "Laiba"
+
+
+
+// what if we create two variables having same name
+
+var city = "Karachi";
+var city = "Islamabad";
+console.log(city);  //what will be the output?
+
+
+
+function abc() {
+   var  myPhoneNumber = 9839393;
+    
+}
+
+{
+    var country = "Pakistan"
+    console.log(country);
+    
+}
+console.log(country);
+
+
+
+abc()
+
+
+myCountry = "Pakistan";
+
+// console.log(myPhoneNumber);
+
