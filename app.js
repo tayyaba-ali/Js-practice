@@ -2614,51 +2614,80 @@
 
 
 
-"use strict"
-// Declared + Initialization
+// "use strict"
+// // Declared + Initialization
 
-var myName = "Tayyaba";
+// var myName = "Tayyaba";
 
-//only declared
+// //only declared
 
-var myRollNo;
+// var myRollNo;
 
-//can be done initialization later
+// //can be done initialization later
 
-myRollNo = 12;
+// myRollNo = 12;
 
-// updating a variable called reassignment
+// // updating a variable called reassignment
 
-myName = "Laiba"
-
-
-
-// what if we create two variables having same name
-
-var city = "Karachi";
-var city = "Islamabad";
-console.log(city);  //what will be the output?
+// myName = "Laiba"
 
 
 
-function abc() {
-   var  myPhoneNumber = 9839393;
+// // what if we create two variables having same name
+
+// var city = "Karachi";
+// var city = "Islamabad";
+// console.log(city);  //what will be the output?
+
+
+
+// function abc() {
+//    var  myPhoneNumber = 9839393;
     
-}
+// }
 
-{
-    var country = "Pakistan"
-    console.log(country);
+// {
+//     var country = "Pakistan"
+//     console.log(country);
     
-}
-console.log(country);
+// }
+// console.log(country);
 
 
 
-abc()
+// abc()
 
 
-myCountry = "Pakistan";
+// var myCountry = "Pakistan";
+
+// console.log(myCountry);
 
 // console.log(myPhoneNumber);
+
+// find the largest number
+
+const numbers  = [1,2,3,4,5,6]
+
+const doubledNumbers = numbers.map((num) => {
+    console.log(num**2);
+    return num**2
+})
+console.log(doubledNumbers);
+
+
+//reverse a string
+
+
+let str = "Nomi is pagal gadha kutta"
+
+let result=[];
+
+for (var i = str.length - 1; i>=0;i--){
+    
+    result.push(str[i])
+    
+}
+
+let final = result.join("")
+console.log(final);
 
