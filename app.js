@@ -2678,7 +2678,7 @@ console.log(doubledNumbers);
 //reverse a string
 
 
-let str = "Nomi is pagal gadha kutta"
+let str = "My country name is Pakistan"
 
 let result=[];
 
