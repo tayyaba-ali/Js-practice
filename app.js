@@ -2691,3 +2691,19 @@ for (var i = str.length - 1; i>=0;i--){
 let final = result.join("")
 console.log(final);
 
+
+// Interview question generator functions
+
+function* serialNumberGenerator() {
+	let serialNumber = 1000;
+	while (true) {
+		yield serialNumber++;
+	}
+}
+
+const serials = serialNumberGenerator();
+
+console.log(serials.next().value);
+console.log(serials.next().value);
+console.log(serials.next().value);
+
