@@ -2707,3 +2707,18 @@ console.log(serials.next().value);
 console.log(serials.next().value);
 console.log(serials.next().value);
 
+
+
+//currying
+
+function multiply(a) {
+  return function(b) {
+    return function(c) {
+      return a * b * c;
+    };
+  };
+}
+
+const multiplyBy2 = multiply(2);
+const multiplyBy2And3 = multiplyBy2(3);
+console.log(multiplyBy2And3(4)); 
