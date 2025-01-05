@@ -2503,8 +2503,6 @@
 
 // // console.log("js");
 
-
-
 // // for loop
 
 // // let i = 0;
@@ -2531,7 +2529,7 @@
 //         found = true;
 //         break
 //     }
-   
+
 // }
 
 // if (found) {
@@ -2548,7 +2546,6 @@
 //     console.log(i);
 // }
 
-
 // let i = 10;
 // do {
 //     console.log(i);
@@ -2561,18 +2558,16 @@
 
 // colors[ 3 ] = "Tayyaba"
 // const ibj = {
-    
+
 // }
 // // console.log(colors[colors.length-1]);
 // console.log(colors);
 // console.log(typeof colors, typeof ibj);
 // console.log(Array.isArray(colors));
 
-
 // Methods of arrays
 
 // const numbers=["1","2","3"]
-
 
 // console.log("before pushing ");
 // console.log(numbers);
@@ -2600,9 +2595,6 @@
 // console.log(arr1);
 // console.log(arr2);
 
-
-
-
 // year 2025 every month need to revise javascript concepts basic to advance
 // New Year resolution (Insha Allah will try my best to achieve it)
 
@@ -2611,8 +2603,6 @@
 // var myName = "Tayyaba"
 // var myName = "Umra"
 // console.log(myName);
-
-
 
 // "use strict"
 // // Declared + Initialization
@@ -2631,32 +2621,25 @@
 
 // myName = "Laiba"
 
-
-
 // // what if we create two variables having same name
 
 // var city = "Karachi";
 // var city = "Islamabad";
 // console.log(city);  //what will be the output?
 
-
-
 // function abc() {
 //    var  myPhoneNumber = 9839393;
-    
+
 // }
 
 // {
 //     var country = "Pakistan"
 //     console.log(country);
-    
+
 // }
 // console.log(country);
 
-
-
 // abc()
-
 
 // var myCountry = "Pakistan";
 
@@ -2666,31 +2649,26 @@
 
 // find the largest number
 
-const numbers  = [1,2,3,4,5,6]
+const numbers = [1, 2, 3, 4, 5, 6];
 
 const doubledNumbers = numbers.map((num) => {
-    console.log(num**2);
-    return num**2
-})
+	console.log(num ** 2);
+	return num ** 2;
+});
 console.log(doubledNumbers);
-
 
 //reverse a string
 
+let str = 'My country name is Pakistan';
 
-let str = "My country name is Pakistan"
+let result = [];
 
-let result=[];
-
-for (var i = str.length - 1; i>=0;i--){
-    
-    result.push(str[i])
-    
+for (var i = str.length - 1; i >= 0; i--) {
+	result.push(str[i]);
 }
 
-let final = result.join("")
+let final = result.join('');
 console.log(final);
-
 
 // Interview question generator functions
 
@@ -2707,3 +2685,10 @@ console.log(serials.next().value);
 console.log(serials.next().value);
 console.log(serials.next().value);
 
+// increment and decrement operators
+
+// some interesting exercises
+
+var num = 2;
+var num1 = 4;
+console.log(num++ + num1++);
