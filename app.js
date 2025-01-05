@@ -2685,10 +2685,3 @@ console.log(serials.next().value);
 console.log(serials.next().value);
 console.log(serials.next().value);
 
-// increment and decrement operators
-
-// some interesting exercises
-
-var num = 2;
-var num1 = 4;
-console.log(num++ + num1++);
