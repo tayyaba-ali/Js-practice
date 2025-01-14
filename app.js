@@ -2649,39 +2649,51 @@
 
 // find the largest number
 
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
-const doubledNumbers = numbers.map((num) => {
-	console.log(num ** 2);
-	return num ** 2;
-});
-console.log(doubledNumbers);
+// const doubledNumbers = numbers.map((num) => {
+// 	console.log(num ** 2);
+// 	return num ** 2;
+// });
+// console.log(doubledNumbers);
 
 //reverse a string
 
-let str = 'My country name is Pakistan';
+// let str = 'My country name is Pakistan';
 
-let result = [];
+// let result = [];
 
-for (var i = str.length - 1; i >= 0; i--) {
-	result.push(str[i]);
-}
+// for (var i = str.length - 1; i >= 0; i--) {
+// 	result.push(str[i]);
+// }
 
-let final = result.join('');
-console.log(final);
+// let final = result.join('');
+// console.log(final);
 
 // Interview question generator functions
 
-function* serialNumberGenerator() {
-	let serialNumber = 1000;
-	while (true) {
-		yield serialNumber++;
-	}
-}
+// function* serialNumberGenerator() {
+// 	let serialNumber = 1000;
+// 	while (true) {
+// 		yield serialNumber++;
+// 	}
+// }
 
-const serials = serialNumberGenerator();
+// const serials = serialNumberGenerator();
 
-console.log(serials.next().value);
-console.log(serials.next().value);
-console.log(serials.next().value);
+// console.log(serials.next().value);
+// console.log(serials.next().value);
+// console.log(serials.next().value);
 
+const student = {
+  name: "John",
+  course: {
+    title: "JavaScript for Beginners",
+    instructor: {
+      name: "Ms. Smith"
+    }
+  }
+};
+
+console.log(student.course.instructor?.name);
+console.log(student.course.instructor?.email);
