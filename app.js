@@ -2736,13 +2736,26 @@
 
 // console.log(numbers1)
 
-let key = "email"
-let key2 = "email2"
+// let key = "email"
+// let key2 = "email2"
 
 
-const obj={
-	[key] : "value1",
-	[key2]: "value2"
+// const obj={
+// 	[key] : "value1",
+// 	[key2]: "value2"
+// }
+
+// console.log(obj[key2]);
+
+
+// arrow functions
+
+const happyBirthday = msg =>console.log(msg);
+
+happyBirthday("Happy Birthday");
+
+const aboutMe = (name, age) => {
+	console.log(`My name is ${name} and my age is ${age}`);
 }
 
-console.log(obj.key)
+aboutMe("Tayyaba",23)
