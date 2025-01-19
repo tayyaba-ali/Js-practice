@@ -2750,12 +2750,95 @@
 
 // arrow functions
 
-const happyBirthday = msg =>console.log(msg);
+// const happyBirthday = msg =>console.log(msg);
 
-happyBirthday("Happy Birthday");
+// happyBirthday("Happy Birthday");
 
-const aboutMe = (name, age) => {
-	console.log(`My name is ${name} and my age is ${age}`);
-}
+// const aboutMe = (name, age) => {
+// 	console.log(`My name is ${name} and my age is ${age}`);
+// }
 
-aboutMe("Tayyaba",23)
+// aboutMe("Tayyaba",23)
+
+
+
+.map((value, index, array) => {})
+.filter((value, index, array) => {})
+.reduce((acc, value, index, array) => {}, initialValue)
+.find((value, index, array) => {})
+.findIndex((value, index, array) => {})
+.forEach((value, index, array) => {})
+
+let names = ['John', 'Jane', 'Jack'];
+
+let lengths = names.map((name) => name.length);
+
+console.log(lengths);
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers);
+
+let sum = numbers.reduce((acc, num) => acc + num, 0);
+
+console.log(sum);
+
+let found = numbers.find((num) => num === 5);
+
+console.log(found);
+
+let index = numbers.findIndex((num) => num === 5);
+
+console.log(index);
+
+numbers.forEach((num) => console.log(num));
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers);
+
+let sum = numbers.reduce((acc, num) => acc + num, 0);
+
+console.log(sum);
+
+let found = numbers.find((num) => num === 5);
+
+console.log(found);
+
+let index = numbers.findIndex((num) => num === 5);
+
+console.log(index);
+
+numbers.forEach((num) => console.log(num));
+
+let names = ['John', 'Jane', 'Jack'];
+
+let lengths = names.map((name) => name.length);
+
+console.log(lengths);
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers);
+
+let sum = numbers.reduce((acc, num) => acc + num, 0);
+
+console.log(sum);
+
+let found = numbers.find((num) => num === 5);
+
+console.log(found);
+
+let index = numbers.findIndex((num) => num === 5);
+
+console.log(index);
+
+numbers.forEach((num) => console.log(num));
+
+let numbers = [1, 2, 3, 4, 5, 6
